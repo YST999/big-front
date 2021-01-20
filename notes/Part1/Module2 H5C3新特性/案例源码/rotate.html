@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            position: relative;
+            width: 880px;
+            height: 550px;
+            margin: 300px 100px;
+        }
+		/* 定位问题：由于设置了原点位置，因此在缩放时也会以此原点进行缩放，导致图片水平不居中。 */
+		/* 光标移动前后图片大小不一：权重高的选择器样式层叠了权重低的，因此transform:scale(0.1);失效
+		   解决：transform没有复合写法，只能在权重高的选择器中添加所需要的transform属性值。*/
+        .box img {
+            position: absolute;
+            left: 0;
+            top: 0;
+			transform:scale(0.1);
+            width: 880px;
+            height: 550px;
+            transform-origin:right top;
+            transition: all 1s ease;
+        }
+        .box:hover img:nth-child(1){
+            transform:rotate(60deg); 
+        }
+        .box:hover img:nth-child(2){
+            transform:rotate(120deg); 
+        }
+        .box:hover img:nth-child(3){
+            transform:rotate(180deg); 
+        }
+        .box:hover img:nth-child(4){
+            transform:rotate(240deg); 
+        }
+        .box:hover img:nth-child(5){
+            transform:rotate(300deg); 
+        }
+        .box:hover img:nth-child(6){
+            transform:rotate(360deg); 
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+            <img src="images/lunbo/c1.jpg" alt="">
+            <img src="images/lunbo/c2.jpg" alt="">
+            <img src="images/lunbo/c3.jpg" alt="">
+            <img src="images/lunbo/c4.jpg" alt="">
+            <img src="images/lunbo/c5.jpg" alt="">
+            <img src="images/lunbo/c6.jpg" alt="">
+    </div>
+</body>
+</html>
