@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 500px auto;
+            animation: move1 5s linear infinite;
+            transform-style:flat;
+        }
+        @keyframes move1 {
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(500px);
+            }
+            50%{
+                transform: translateX(500px) translateY(500px);
+            }
+            75%{
+                transform: translateX(0) translateY(500px);
+            }
+            100%{
+                transform: translateX(0)  translateY(0);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
