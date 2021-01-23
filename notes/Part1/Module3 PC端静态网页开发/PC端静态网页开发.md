@@ -33,3 +33,34 @@
 1. 一列 固定宽度且居中
 2. 两列 左窄右宽
 3. 通栏平均分布(与body同宽)
+
+文件结构：
+
+  css images  index.html
+
+##### head内的配置：
+
+title   /  icon
+
+css分级引入
+
+css常见的分层组织：清除默认样式(reset.css),网站公共样式(common.css)，每个页面独有的css(index_banner.css)
+
+
+
+header区域
+
+header：网页顶部常用命名，通常包含logo 导航nav等内容。
+
+布局类型：通栏背景，内部包含版心居中的主要内容，内容包含左、右浮动的两部分。
+
+整体结构：100%div>版心div
+
+注意：为了避免更改公共的版心样式，div需要添加一个新的class
+
+logo：h1>a结构
+
+nav:ul>li>a搭建结构。
+
+
+

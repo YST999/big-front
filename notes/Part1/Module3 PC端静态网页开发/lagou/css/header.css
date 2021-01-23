@@ -1,0 +1,50 @@
+/* header */
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: #32373E;
+    line-height: 40px;
+}
+.header-c {
+    height: 40px;
+}
+.header-c .header-left {
+    float: left;
+}
+.header-c .header-right {
+    float: right;
+}
+/* logo部分 */
+.header-c .header-left .logo {
+    float:left;
+    width: 43px;
+    height: 31px;
+    padding-top: 9px;
+    margin-right: 34px;
+}
+.header-c .header-left .logo a {
+    display: block;
+    width: 43px;
+    height: 21px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+.header-c .header-left .city {
+    float: left;
+    width: 114px;
+    height: 21px;
+    margin-right: 31px;
+    cursor: pointer;
+}
+.header-c .header-left .city span {
+    color: #0DCA9F;
+    margin-right: 12px;
+}
+.header-c .header-left .city i {
+    font-size: 12px;
+    color: #AFB5C0;
+}
+.header-c .header-left .city:hover i {
+    color: #FFFFFF;
+}
