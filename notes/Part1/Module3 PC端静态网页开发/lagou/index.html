@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/loginBanner.css">
+
 
 </head>
+
 <body>
     <!-- header区域开始 -->
     <div class="header">
@@ -25,11 +29,86 @@
                 <div class="city">
                     <span>全国站</span><i>[切换城市]</i>
                 </div>
+                <!-- 导航栏 -->
+                <!-- ul本身就是块级元素，不需要再嵌套一层div -->
+                <ul class="nav">
+                    <li><a href="">首页</a></li>
+                    <li><a href="">公司</a></li>
+                    <li><a href="">校园招聘</a></li>
+                    <li><a href="">职位</a></li>
+                    <li><a href="">言职</a></li>
+                    <li><a href="">课程<span class="tips">new</span></a></li>
+                </ul>
             </div>
             <!-- header右侧 -->
-            <div class="header-right">1</div>
+            <div class="header-right">
+                <a href="" class="upload">上传简历</a>
+                <a href="" class="position">职位订阅</a>
+                <a href="" class="login"><i></i>登录</a>
+                <span>|</span>
+                <a href="" class="register">注册</a>
+                <a href="" class="app"><i></i>拉勾app</a>
+                <a href="" class="company">进入企业版</a>
+            </div>
         </div>
     </div>
-        <!-- header区域结束 -->
+    <!-- header区域结束 -->
+    <!-- login区域开始 -->
+    <div class="login-banner">
+        <!-- 版心区域开始 -->
+        <div class="inner-c banner-c">
+            <!-- banner左侧 -->
+            <div class="banner-ad">
+                <img src="images/text_01.png">
+                <p class="span2">21234542家公司|564515681个职位在拉勾等你</p>
+            </div>
+            <!-- banner右侧 -->
+            <div class="banner-login">
+                <!-- 电话号码 -->
+                <div class="phone">
+                    <div class="area-code">
+                        <!-- 当前显示的区域码 -->
+                        <div class="area-code-now">0086</div>
+                        <dl class="dl-list">
+                            <dt>常用</dt>
+                            <dd>中国<span>0086</span></dd>
+                            <dd>中国香港<span>00852</span></dd>
+                            <dd>中国澳门<span>0085</span></dd>
+                            <dd>北京<span>00801</span></dd>
+                            <dd>美国<span>0001</span></dd>
+                            <dt>常用</dt>
+                            <dd>中国<span>0086</span></dd>
+                            <dd>中国香港<span>00852</span></dd>
+                            <dd>中国澳门<span>0085</span></dd>
+                            <dd>北京<span>00801</span></dd>
+                            <dd>美国<span>0001</span></dd>
+                            <dt>常用</dt>
+                            <dd>中国<span>0086</span></dd>
+                            <dd>中国香港<span>00852</span></dd>
+                            <dd>中国澳门<span>0085</span></dd>
+                            <dd>北京<span>00801</span></dd>
+                            <dd>美国<span>0001</span></dd>
+                            <p>如果没有您的所在地区，请拨打电话</p>
+                        </dl>
+                    </div>
+                    <input type="text" class="phonenum" placeholder="输入手机号">
+                </div>
+                <!-- 验证码 -->
+                <div class="yzm">
+                    <input type="text" class="yzm-txt" placeholder="验证码">
+                    <i>|</i>
+                    <span>获取</span>
+                </div>
+                <!-- 登录注册按钮 -->
+                <div class="login-or-register">
+                    登录/注册
+                </div>
+            </div>
+        </div>
+        <!-- 版心区域结束 -->
+    </div>
+    <!-- login区域结束 -->
+
 </body>
+
 </html>
