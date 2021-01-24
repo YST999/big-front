@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 .banner-c .banner-login .phone .area-code .dl-list {
-    /* display: none; */
+    display: none;
     position: absolute;
     left: 0;
     top: 35px;
