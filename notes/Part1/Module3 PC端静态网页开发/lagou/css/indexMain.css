@@ -1,0 +1,18 @@
+.content .main {
+    margin-top: 33px;
+    width: 1207px;
+    height: 376px;
+}
+.content .main .aside {
+    float: left;
+    width: 310px;
+    height: 376px;
+    background-color: pink;
+}
+.content .main .banner {
+    float: right;
+    margin-top: 13px;
+    width: 840px;
+    height: 346px;
+    background-color: red;
+}
