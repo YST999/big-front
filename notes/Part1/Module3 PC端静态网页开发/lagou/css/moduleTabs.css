@@ -2,6 +2,7 @@
 .module-tabs {
     width: 100%;
     margin-top: 37px;
+    margin-bottom: 54px;
 }
 .content .module-tabs .title {
     width: 100%;
@@ -55,6 +56,10 @@
 }
 .content .module-tabs .details ul {
     width: 1220px;
+    display: none;
+}
+.content .module-tabs .details ul.current{
+    display: block;
 }
 .content .module-tabs .details ul li {
     float: left;
@@ -63,4 +68,19 @@
     border: 1px solid #EAEEED;
     padding: 24px 18px 17px;
     margin: 0 16px 16px 0;
+}
+.content .module-tabs .more {
+    display:block;
+    width: 387px;
+    height: 42px;
+    border :1px solid #00b38a;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 auto;
+    color: #66b48b;
+    font-size: 16px;;
+}
+.content .module-tabs .more:hover {
+    color: #ffffff;
+    background-color: #66b48b;
 }
