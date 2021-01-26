@@ -48,3 +48,19 @@
     float: left;
     color: #00B38A;
 }
+/* 公共details */
+.content .module-tabs .details {
+    width: 100%;
+    overflow: hidden;
+}
+.content .module-tabs .details ul {
+    width: 1220px;
+}
+.content .module-tabs .details ul li {
+    float: left;
+    width: 351px;
+    height: 158px;
+    border: 1px solid #EAEEED;
+    padding: 24px 18px 17px;
+    margin: 0 16px 16px 0;
+}
