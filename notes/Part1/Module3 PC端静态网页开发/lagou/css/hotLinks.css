@@ -24,7 +24,9 @@
 .content .hot-links .detail-list p {
     float: right;
     height: 30px;
+    line-height: 30px;
 }
 .content .hot-links .detail-list p a {
     background: url(../images/arrow_down.png) no-repeat right center;
+    padding-right: 20px;
 }
