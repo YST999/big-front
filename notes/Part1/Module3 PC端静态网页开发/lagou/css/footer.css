@@ -14,12 +14,7 @@
     height: 138px;
     border-right: 1px solid #E8E8E8;
 }
-.footer .footer-c .right {
-    float: left;
-    margin-left: 130px;
-    width: 757px;
-    height: 138px;
-}
+
 .footer .footer-c .left a {
     text-align: center;
     display: block;
@@ -56,5 +51,80 @@
 .footer .footer-c .left .wechat:hover i {
     background-position: -172px -54px;
 }
+.footer .footer-c .left .wechat {
+    position: relative;
+}
+.footer .footer-c .left .wechat img {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 184px;
+    display: none;
+}
+.footer .footer-c .left .wechat:hover img {
+    display: block;
+}
+.footer .footer-c .left .little a {
+    float: left;
+    border: 0;
+    width: 90px;
+    color: #555555;
+}
+.footer .footer-c .left .little a:hover {
+    color: #00B38A;
+    background-color: #fff;
+}
+.footer .footer-c .left .little a:hover i{
+    background-position: -114px -221px;
+}
+.footer .footer-c .left .little .weibo:hover i{
+    background-position: -172px -20px;
+}
+.footer .footer-c .left .little .weixin i {
+    width: 16px;
+    height: 14px;
+    background: url(../images/sprite_02.png) no-repeat -114px -185px;
+}
+.footer .footer-c .left .little .weibo i {
+    width: 16px;
+    height: 14px;
+    background: url(../images/sprite_02.png) no-repeat -214px -20px;
+    /* 172  20 */
+}
+.footer .footer-c .left .little .weixin {
+    position: relative;
+}
+.footer .footer-c .left .little img {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.footer .footer-c .left .little .weixin:hover img {
+    display: block;
+}
+.footer .footer-c .right {
+    float: left;
+    margin-left: 130px;
+    width: 757px;
+    height: 138px;
+}
+.footer .footer-c .right dl {
+    float: left;
+    width: 252px;
 
-
+}
+.footer .footer-c .right dt {
+    height: 23px;
+    line-height: 23px;
+    margin-bottom: 24px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #555555;
+}
+.footer .footer-c .right dd {
+    line-height: 32px;
+    font-size: 14px;
+    color: #555555;
+}

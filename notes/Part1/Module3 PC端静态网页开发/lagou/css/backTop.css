@@ -1,0 +1,12 @@
+.backTop {
+    position: fixed;
+    left: 50%;
+    bottom: 88px;
+    margin-left: 630px;
+    width: 28px;
+    height: 46px;
+    background: url(../images/backtop.png) no-repeat 0 0;
+}
+.backTop:hover {
+    background-position: -38px 0;
+}

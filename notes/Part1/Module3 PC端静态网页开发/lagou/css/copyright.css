@@ -1,0 +1,75 @@
+.copyright {
+    width: 100%;
+    height: 100px;
+    background-color: #FAFAFA;
+}
+.copyright .copyright-c {
+    height: 60px;
+    padding-top: 28px;
+    line-height: 60px;
+}
+.copyright-c .left {
+    float: left;
+    height: 60px;
+    font-size: 14px;
+    color: #999999;
+} 
+.copyright-c .left .lago {
+    float: left;
+    margin-right: 5px;
+}
+.copyright-c .left a {
+    color:  #999;
+}
+.copyright-c .left a:hover {
+    color: #333;
+}
+.copyright-c .left .bei {
+    float: left;
+    margin-right: 21px;
+}
+.copyright-c .left .beian{
+    position: relative;
+    padding-left: 20px;
+    margin-right: 18px;
+    float: left;
+}
+/* 定位！！！ */
+.copyright-c .left .beian i {
+    position: absolute;
+    top: 22px;
+    left: 0px;
+    width: 14px;
+    height: 16px;
+    background: url(../images/sprite_02.png) no-repeat -151px -184px;
+}
+.copyright-c .left .jubao {
+    position: relative;
+    box-sizing: border-box;
+    float: right;
+    width: 186px;
+    height: 58px;
+    border: 1px solid #D5DADF;
+    padding: 7px 0 7px 50px;
+}
+.copyright-c .left .jubao span {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+}
+.copyright-c .left .jubao i {
+    position: absolute;
+    top: 20px;
+    left: 17px;
+    background: url(../images/sprite_02.png) no-repeat -132px -20px;
+    width: 20px;
+    height: 24px;
+}
+.copyright-c .right {
+    float: right;
+    height: 19px;
+    width: 198px;
+    margin-top: 21px;
+    background: url(../images/footer_lagou_icon.png) no-repeat;
+} 
