@@ -1,0 +1,56 @@
+.phone {
+    width: 100%;
+    height: 471px;
+    background-color: #F5F5F5;
+}
+.phone-c {
+    height: 471px;
+}
+.tab {
+    height: 93px;
+}
+.phone-c h3 {
+    float: left;
+    margin-top: 22px;
+    padding: 24px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.phone-c .more {
+    position: relative;
+    float: right;
+    width: 48px;
+    height: 34px;
+    padding: 21px 0;
+    margin-top: 17px;
+    text-align: center;
+    line-height: 34px;
+}
+.phone-c .more span {
+    padding-right: 20px;
+
+}
+/* 图片要用定位实现！！！！！ */
+.phone-c .more i {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 9px;
+    height: 17px;
+    background: url(../images/banner_arrow_right_highlight.png) no-repeat right center;
+}
+.phone-c ul {
+    float: left;
+    height: 378px;
+    width: 1270px;
+}
+.phone-c ul li {
+    float: left;
+    width: 243px;
+    height: 338px;
+    margin-right: 6px;
+    background-color: #fff;
+}
+.phone-c ul li.item5 {
+    margin-right: 0;
+}

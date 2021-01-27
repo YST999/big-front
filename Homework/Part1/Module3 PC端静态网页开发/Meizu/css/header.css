@@ -1,0 +1,60 @@
+.header {
+    width: 100%;
+    height: 41px;
+    background-color: #FAFAFC;
+    font-size: 12px;
+}
+.header .header-c {
+    height: 41px;
+    line-height: 41px;
+}
+.header .header-c a {
+    color: #888888;
+}
+.header-left {
+    float: left;
+}
+.header-left li {
+    float: left;
+    margin-right: 45px;
+}
+.header-right {
+    float: right;
+}
+.header-right li {
+    float: left;
+    margin-right: 39px;
+}
+.header-right li.star {
+    position: relative;
+    padding-right: 28px;
+}
+/* tips */
+.header-right .star span {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 62px;
+    width: 28px;
+    height: 14px;
+    /* 文字没显示出来 因为继承了祖先的line-height为41px 所以不在span的框内显示 */
+    line-height: 14px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #ED4462;
+    font-size: 12px;
+    color: #fff;
+}
+/* 制作气泡三角 */
+.header-right .star span:after {
+    display: block;
+    content:"";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: transparent #ED4462 transparent transparent;
+    position: absolute;
+    top: 4px;
+    left: -6px;
+}

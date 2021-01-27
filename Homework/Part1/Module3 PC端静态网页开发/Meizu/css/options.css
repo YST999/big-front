@@ -1,0 +1,23 @@
+.options {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #EFEFEF;
+}
+.option {
+    height: 80px;
+    line-height:80px;
+    font-size: 16px;
+}
+.option div {
+    float: left;
+    margin-right: 257px;
+}
+.option .breed {
+    float: left;
+}
+.option .breed li {
+    float: left;
+    margin-right: 36px;
+    color: #333333;
+}
