@@ -1,0 +1,32 @@
+.content .hot-links .title span {
+    margin-right: 25px;
+}
+.content .hot-links .detail-list {
+    height: 30px;
+    overflow: hidden;
+}
+.content .hot-links .detail-list ul li {
+    float: left;
+    width: 1132px;
+    line-height: 30px;
+}
+.content .hot-links .detail-list .current a {
+    margin-right: 18px;
+    color: #555555;
+    text-align: center;
+}
+.content .hot-links .detail-list .current .look-more {
+    text-decoration: underline;
+}
+.content .hot-links .detail-list .current a:hover {
+    text-decoration: underline;
+}
+.content .hot-links .detail-list p {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+.content .hot-links .detail-list p a {
+    background: url(../images/arrow_down.png) no-repeat right center;
+    padding-right: 20px;
+}

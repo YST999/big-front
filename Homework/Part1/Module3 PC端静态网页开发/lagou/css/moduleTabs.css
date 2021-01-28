@@ -1,0 +1,86 @@
+/* tab公共样式 */
+.module-tabs {
+    width: 100%;
+    margin-top: 37px;
+    margin-bottom: 54px;
+}
+.content .module-tabs .title {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 28px;
+}
+.content .module-tabs .title span {
+    float: left;
+    height: 48px;
+    font-size:16px;
+    color: #A59999;
+    margin-right: 59px;
+    line-height:48px;
+    cursor: pointer;
+}
+.content .module-tabs .title .current {
+    color: #333333;
+    border-bottom: 2px solid #333333;
+}
+.content .module-tabs .tips {
+    height: 18px;
+    margin-bottom: 18px;
+    line-height: 18px;
+}
+.content .module-tabs .tips i {
+    float: left;
+    margin-left: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #E6E6E6;
+    color: #F8FDFF;
+    margin-right: 14px;
+    text-align: center;
+}
+.content .module-tabs .tips span {
+    float: left;
+    height: 18px;
+    color: #999999;
+    margin-right: 22px;
+}
+.content .module-tabs .tips a {
+    float: left;
+    color: #00B38A;
+}
+/* 公共details */
+.content .module-tabs .details {
+    width: 100%;
+    overflow: hidden;
+}
+.content .module-tabs .details ul {
+    width: 1220px;
+    display: none;
+}
+.content .module-tabs .details ul.current{
+    display: block;
+}
+.content .module-tabs .details ul li {
+    float: left;
+    width: 351px;
+    height: 158px;
+    border: 1px solid #EAEEED;
+    padding: 24px 18px 17px;
+    margin: 0 16px 16px 0;
+}
+.content .module-tabs .more {
+    display:block;
+    width: 387px;
+    height: 42px;
+    border :1px solid #00b38a;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 auto;
+    color: #66b48b;
+    font-size: 16px;;
+}
+.content .module-tabs .more:hover {
+    color: #ffffff;
+    background-color: #66b48b;
+}
