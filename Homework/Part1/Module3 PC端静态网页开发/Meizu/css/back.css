@@ -1,0 +1,16 @@
+.backTop {
+    position: fixed;
+    bottom: 160px;
+    right: 100px;
+    width: 26px;
+    height: 26px;
+    background: url(../images/gotop-arrow.png) no-repeat center center;
+
+}
+.backTop a {
+    color:  #666666;
+    font-size:12px
+}
+.backTop a:hover {
+    color: #0D90FF;
+}

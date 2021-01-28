@@ -11,6 +11,9 @@
 .header .header-c a {
     color: #888888;
 }
+.header .header-c a:hover {
+    color: #0D90FF;
+}
 .header-left {
     float: left;
 }

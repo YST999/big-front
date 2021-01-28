@@ -7,7 +7,7 @@
     height: 471px;
 }
 .tab {
-    height: 93px;
+    height: 92px;
 }
 .phone-c h3 {
     float: left;
@@ -15,6 +15,7 @@
     padding: 24px 0;
     font-size: 24px;
     font-weight: 700;
+    cursor: default;
 }
 .phone-c .more {
     position: relative;
@@ -41,7 +42,7 @@
 }
 .phone-c ul {
     float: left;
-    height: 378px;
+    height: 338px;
     width: 1270px;
 }
 .phone-c ul li {
@@ -50,7 +51,29 @@
     height: 338px;
     margin-right: 6px;
     background-color: #fff;
+    text-align: center;
+}
+.phone-c ul li img {
+    padding-top: 38px;
+}
+.phone-c ul li span {
+    display: block;
+    /* line-height: 22px; */
+}
+.phone-c .name {
+    margin-top: 37px;
+    font: 14px/22px "微软雅黑";
+    color: #555757;
 }
 .phone-c ul li.item5 {
     margin-right: 0;
+}
+.phone-c .info {
+    font: 12px/22px "微软雅黑";   
+    color:  #999999; 
+}
+.phone-c .price {
+    margin-top: 4px;
+    font-size: 16px/22px ;
+    color:  #E02B41; 
 }

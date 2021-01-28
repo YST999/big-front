@@ -18,6 +18,9 @@
     height: 140px;
     margin-right: 5px;
 }
+.ad-list li:hover {
+    cursor: pointer;
+}
 .ad-list .item1 a {
     display: block;
     float: left;
