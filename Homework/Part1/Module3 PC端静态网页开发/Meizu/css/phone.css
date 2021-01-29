@@ -58,22 +58,22 @@
 }
 .phone-c ul li span {
     display: block;
-    /* line-height: 22px; */
+    line-height: 22px;
 }
 .phone-c .name {
     margin-top: 37px;
-    font: 14px/22px "微软雅黑";
+    font-size: 14px;
     color: #555757;
 }
 .phone-c ul li.item5 {
     margin-right: 0;
 }
 .phone-c .info {
-    font: 12px/22px "微软雅黑";   
+    font-size: 12px;   
     color:  #999999; 
 }
 .phone-c .price {
     margin-top: 4px;
-    font-size: 16px/22px ;
+    font-size: 16px;
     color:  #E02B41; 
 }

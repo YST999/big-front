@@ -1,0 +1,159 @@
+/* 给body样式初始化 */
+body {
+    min-width: 320px;;
+    max-width: 540px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: -apple-system,Helvetica,sans-serif;;
+}
+/* 清除高亮并设置为透明 */
+* {
+    -webkit-tap-highlight-color:transparent;
+}
+/* 添加此属性来给iOS的按钮和输入框自定义样式 */
+input {
+    -webkit-appearance: none;
+}
+/* 禁用长按页面时弹出菜单 */
+img,a {
+    -webkit-touch-callout: none;
+}
+/* 开始局部 */
+.header-tips {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #232326;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.header-tips div:nth-child(1) {
+    float: left;
+    width: 8%;
+}
+.header-tips div:nth-child(1) img {
+    width: 16px;
+    vertical-align: middle;
+}
+.header-tips div:nth-child(2) {
+    float: left;
+    width: 10%;
+}
+.header-tips div:nth-child(2) img {
+    width: 35px;
+    vertical-align: middle;
+}
+.header-tips div:nth-child(3) {
+    float: left;
+    width: 57%;
+}
+.header-tips div:nth-child(4) {
+    float: left;
+    width: 25%;
+    background-color: #cd2525;
+}
+.header {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    /* 防止被背景压盖 */
+    z-index: 100;
+    width: 100%;
+    height: 44px;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    vertical-align: middle;
+}
+.search-btn img {
+    width: 20px;
+    height: 18px;
+    margin: 14px 0 0 15px;
+}
+.login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+    line-height: 44px;
+    text-align: left;
+    color: #fff;
+}
+.input {
+    position: relative;
+    margin: 7px 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.input span {
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 15px;
+    margin: 8px 8px 0 15px;
+    background: url(../images/logo2.png) no-repeat 0 0;
+    background-size: 20px 15px;
+}
+/* |制作的两种方法：
+1. 单独制作一个盒子存放|
+2. JD后面添加伪元素，存放|  */
+.input span::after {
+    position: absolute;
+    right: -8px;
+    width: 1px;
+    height: 15px;
+    content: "";
+    display: block;
+    background-color: #ccc;
+}
+.input i {
+    float: left;
+    width: 18px;
+    height: 15px;
+    margin: 8px 0 0 15px;
+    background: url(../images/jd-sprites.png) no-repeat -82px 0;
+    background-size: 200px;
+}
+.input input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding: 0 20px 0 78px;
+    border: none;
+    background: transparent;
+}
+.main {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #FAFAFA;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 187px;
+    background-color: pink;
+}
+.banner-bg {
+    position: absolute;
+    left: -25%;
+    width: 150%;
+    height: 145px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-color: red;
+}
