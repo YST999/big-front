@@ -131,7 +131,45 @@ CSS3盒子模型 box-sizing
 2. 根据新的大小量取坐标
 3. background-sizing也需要设置为缩放后的数值(精灵图原来宽度的一半)
 
+制作渐变背景：
 
+1. background-image （详情见MDN）
 
+   1. 取值：
 
+      * none：表示无背景图的关键字
+      * image：用来标记将要显示的图片，支持多背景设置，‘，’分隔
 
+   2. 语法：
+
+      ```css
+        background-image:
+            url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+      ```
+
+2. 相关函数：[`linear-gradient`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/linear-gradient), [`radial-gradient`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/radial-gradient), [`repeating-linear-gradient`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/repeating-linear-gradient), [`repeating-radial-gradient`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/repeating-radial-gradient)
+
+3. linear-gradient：
+
+   ```css
+   /* 渐变轴为45度，从蓝色渐变到红色 */
+   linear-gradient(45deg, blue, red);
+   
+   /* 从右下到左上、从蓝色渐变到红色 */
+   linear-gradient(to left top, blue, red);
+   
+   /* 从下到上，从蓝色开始渐变、到高度40%位置是绿色渐变开始、最后以红色结束 */
+   linear-gradient(0deg, blue, green 40%, red);
+   ```
+
+图片格式：
+
+1. DPG图片压缩技术
+
+   京东自主研发，可节省用户近50%的浏览流量，极大提升用户打开网页的速度。能够兼容JPEG，实现全平台、全部浏览器的兼容支持。压缩后的图片和webp的清晰度对比没有差距。
+
+2. webp图片格式
+
+   谷歌开发的一种旨在加快图片加载速度的图片格式。图片压缩后的体积大约只有JPEG的2/3，并能节省大量的服务器宽带资源和数据空间。8
+
+图片转为块级元素？为什么 什么情况
