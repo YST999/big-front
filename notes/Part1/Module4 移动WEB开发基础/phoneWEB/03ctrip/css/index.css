@@ -10,7 +10,15 @@ body {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
-
+a {
+    text-decoration: none;
+    color: #222;
+}
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 /*点击高亮我们需要清除清除 设置为transparent 完成透明*/
 
@@ -127,8 +135,114 @@ a {
 .banner a {
     display: block;
 }
-
 .banner img {
     display: block;
     width: 100%;
+}
+.local-nav {
+    position: relative;
+    display: flex;
+    margin: -52px 12px 10px;
+    padding: 4px 0 8px;
+    height: 64px;
+    border-radius: 8px;
+
+    background-color: #fff;
+}
+.local-nav li {    
+    flex: 1;
+}
+.local-nav li a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.local-nav span {
+    font-size: 12px;
+    line-height: 12px;
+}
+.local-nav li i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 40px auto;
+}
+.local-nav li:nth-child(2) i {
+    background-position: 0 -40px;
+}
+.local-nav li:nth-child(3) i {
+    background-position: 0 -80px;
+}
+.local-nav li:nth-child(4) i {
+    background-position: 0 -120px;
+}
+.local-nav li:nth-child(5) i {
+    background-position: 0 -160px;
+}
+.nav {
+    margin: 0 12px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.nav div {
+    display: flex;
+    background-image: linear-gradient(to right,#4B8FED,#53BCED);
+    border-bottom: 1px solid #fff;
+}
+.nav div:last-child {
+    border-bottom: 0;
+}
+.nav a {
+    padding: 25.6px 0;
+    line-height: 14px;
+}
+.nav a:nth-child(1) {
+    flex: 1.347;
+    padding-left: 12px;
+    background: url(../images/flight.png) no-repeat right bottom;
+    background-size: auto 34px;
+}
+.nav a:nth-child(2) {
+    background: url(../images/train.png) no-repeat left bottom;
+    background-size: 37px auto;
+}
+.nav a:nth-child(n+2) {
+    flex: 1;
+    border-left: 1px solid #fff;
+    text-align: center;
+}
+.nav a span {
+    font-size: 14px;
+    color: #fff;
+}
+.nav div:nth-child(1) {
+    background-image: linear-gradient(to right,#FB5A56,#FB8550 54%);
+}
+.nav div:nth-child(1) a:last-child {
+    flex: 2;
+    background-image: url(../images/hot_sale.png) ,linear-gradient(to right,#FFBD4A,#FFD252);
+    background-size: 161px auto;
+
+}
+.nav div:nth-child(1) a:last-child span {
+    color: #A05416;
+}
+.nav div:nth-child(1) a:nth-child(1) {
+    background-image: url(../images/hotel.png);
+    background-size: 73px auto;
+}
+.nav div:nth-child(1) a:nth-child(2) {
+    background-image: url(../images/minsu.png);
+}
+.subnav-entry {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 12px 12px;
+}
+.subnav-entry li {
+    width: 20%;
+
 }

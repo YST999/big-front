@@ -276,3 +276,10 @@ flex-direction和flex-wrap的综合
 attentions :
 
 align-content也可以控制侧轴单行子元素的排列方式，但是此时如果再设置align-self，不会生效，align-self只能覆盖align-items的值。
+
+常见flex布局：
+
+上面图片下面文字型：
+
+1. 设置主轴是y轴
+2. 侧轴设置为居中对齐
