@@ -236,7 +236,7 @@ CSS3盒子模型 box-sizing
 | center     | 挤在一起居中(垂直) |
 | stretch    | 拉伸               |
 
-align-content 侧轴上子元素排列方式(多行)
+##### align-content 侧轴上子元素排列方式(多行)
 
 只能用于子项出现换行的情况。
 
@@ -272,3 +272,7 @@ flex-direction和flex-wrap的综合
 数值越小，排列越靠前，默认为0
 
 注：和z-index不一样
+
+attentions :
+
+align-content也可以控制侧轴单行子元素的排列方式，但是此时如果再设置align-self，不会生效，align-self只能覆盖align-items的值。

@@ -172,6 +172,7 @@ img,a {
     padding: 44px 3.333% 0;
 }
 .banner ul li img {
+	display: block;
     width: 100%;
     border-radius: 10px;
 }

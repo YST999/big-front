@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            display: flex;
+            /* 主轴方法 */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: center; */
+            flex-flow: row wrap;
+            justify-content: space-around;
+            /* flex-wrap: wrap; */
+            /* 单行 */
+            /* align-items: center; */
+            /* 多行 */
+            align-content: center;
+            width: 800px;
+            height: 500px;
+            background-color: yellow;
+        }
+        
+        .box div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        
+        .box .div2 {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div class="div2">2</div>
+        <div>3</div>
+        <!-- <div>1</div>
+        <div>2</div>
+        <div>3</div> -->
+    </div>
+</body>
+
+</html>
