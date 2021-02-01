@@ -8,8 +8,8 @@
 
 ## 那些重要的 CSS 规则：
 1. 一切皆盒子，盒模型分为：[^1]
-    标准盒模型(box-sizing: content-box): width = border + padding + 内容的宽度
-    怪异盒模型(box-sizing: border-box) : width = 内容的宽度
+    标准盒模型(box-sizing: content-box): width = 内容的宽度
+    怪异盒模型(box-sizing: border-box) : width = border + padding + 内容的宽度
 
 2. DOM 元素分类、及其对应的默认 display 属性[^2]
     块级元素:    display: bolck;
