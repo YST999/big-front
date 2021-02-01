@@ -11,9 +11,42 @@
         .text {
             background-color: orange;
         }
+
+        #content {
+            display: flex;
+            /* width: 500px; */
+            width: 1000px;
+        }
+
+        .box {
+            flex-basis: 120px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .box1 {
+            flex-basis: 200px;
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
     </style>
 </head>
 <body>
     <div class="text" style="background-color: red;"> 123 </div>
+
+    <p>the width of content is 500px, flex-basic of flex item is 120px.</p>
+    <p>A, B, C are flex-shrink:1. D and E are flex-shrink:2</p>
+    <p>the width of D is not the same as A's</p>
+    <div id="content">
+        <div class="box" style="background-color:red;">A</div>
+        <div class="box" style="background-color:lightblue;">B</div>
+        <div class="box" style="background-color:yellow;">C</div>
+        <div class="box1" style="background-color:brown;">D</div>
+        <div class="box1" style="background-color:lightgreen;">E</div>
+    </div>
+    <p> 小实验可以回答问题：flex-shrink 与 flex-grow 在计算元素变化量时候有什么区别？ </p>
+    <p> flex-shrink 计算收缩量时，百分比数值由DOM元素基本量 乘以 权值决定</p>
+    <p> flex-grow   计算扩张量时，百分比数值仅仅由DOM元素 权值 决定</p>
+
 </body>
 </html>
