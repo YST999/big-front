@@ -1,0 +1,12 @@
+.box {
+    width: 100%;
+}
+.box div {
+    float: left;
+    width: 50px;
+    height: 35px;
+    background-color: green;
+}
+.box div:nth-child(2) {
+    background-color: yellow;
+}
