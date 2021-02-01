@@ -123,7 +123,7 @@ CSS3盒子模型 box-sizing
 
 
 
-### 京东流式布局
+#### 京东流式布局
 
 二倍精灵图做法：
 
@@ -282,4 +282,52 @@ align-content也可以控制侧轴单行子元素的排列方式，但是此时�
 上面图片下面文字型：
 
 1. 设置主轴是y轴
-2. 侧轴设置为居中对齐
+2. 侧轴设置为居中对齐 
+
+
+
+### 苏宁rem布局
+
+##### rem:
+
+1. 是一个相对单位
+2. rem的基准是相对于html元素的字体大小
+
+3. 优势：参考元素是html，一个页面只有一个html，可以很好的控制整个页面的元素大小比例
+
+##### 媒体查询：
+
+css3新语法；
+
+* 使用@media查询，可以针对不同的媒体类型定义不同的样式。
+* 可以针对不同的屏幕尺寸设置不同的样式
+* 重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面
+
+语法规范：
+
+* 用@media开头
+* mediatype媒体类型
+* 关键字 and 、not 、 only
+* media feature媒体特性  
+
+```css
+@media mediatype and|not|only (media feature) { CSS-Code}
+```
+
+mediatype: all/print/screen
+
+media feature:width/min-width/max-width	
+
+```css
+@media screen and (max-width: 600px) {
+
+	body {
+
+		background-color: green;
+
+	}
+
+}
+```
+
+媒体查询+rem实现元素动态大小变化
