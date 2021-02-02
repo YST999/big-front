@@ -1,0 +1,39 @@
+// 导入公共的common.less
+@import "common";
+// 首页css样式
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial,Helvetica,STHeiTi,sans-serif;
+    background-color:#f2f2f2;
+}
+// 后续尺寸都需要采用rem
+@baseFont: 50px;
+// top-banner区域
+.top-banner {   
+    position: relative;
+    width: 750rem / @baseFont;
+    height: 100rem / @baseFont;
+    .top-banner-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .close {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.1rem;
+        display: block;
+        width: 50rem / @baseFont;
+        height: 50rem / @baseFont;
+        background: url(../images/close.png) no-repeat center center;
+        background-size: 30rem / @baseFont auto;
+    }
+}
