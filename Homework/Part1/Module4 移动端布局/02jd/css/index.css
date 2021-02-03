@@ -1,0 +1,423 @@
+/* 给body样式初始化 */
+body {
+    min-width: 320px;;
+    max-width: 540px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: -apple-system,Helvetica,sans-serif;;
+}
+a {
+    text-decoration: none;
+}
+ul,ol {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+/* 清除高亮并设置为透明 */
+* {
+    -webkit-tap-highlight-color:transparent;
+}
+/* 添加此属性来给iOS的按钮和输入框自定义样式 */
+input {
+    -webkit-appearance: none;
+}
+/* 禁用长按页面时弹出菜单 */
+img,a {
+    -webkit-touch-callout: none;
+}
+/* 开始局部 */
+.header-tips {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #232326;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.header-tips div:nth-child(1) {
+    float: left;
+    width: 8%;
+}
+.header-tips div:nth-child(1) img {
+    width: 16px;
+    vertical-align: middle;
+}
+.header-tips div:nth-child(2) {
+    float: left;
+    width: 10%;
+}
+.header-tips div:nth-child(2) img {
+    width: 35px;
+    vertical-align: middle;
+}
+.header-tips div:nth-child(3) {
+    float: left;
+    width: 57%;
+}
+.header-tips div:nth-child(4) {
+    float: left;
+    width: 25%;
+    background-color: #cd2525;
+}
+.header {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    /* 防止被背景压盖 */
+    z-index: 100;
+    width: 100%;
+    height: 44px;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    vertical-align: middle;
+}
+.search-btn img {
+    width: 20px;
+    height: 18px;
+    margin: 14px 0 0 15px;
+}
+.login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+    line-height: 44px;
+    text-align: left;
+    color: #fff;
+}
+.input {
+    position: relative;
+    margin: 7px 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.input span {
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 15px;
+    margin: 8px 8px 0 15px;
+    background: url(../images/logo2.png) no-repeat 0 0;
+    background-size: 20px 15px;
+}
+/* |制作的两种方法：
+1. 单独制作一个盒子存放|
+2. JD后面添加伪元素，存放|  */
+.input span::after {
+    position: absolute;
+    right: -8px;
+    width: 1px;
+    height: 15px;
+    content: "";
+    display: block;
+    background-color: #ccc;
+}
+.input i {
+    float: left;
+    width: 18px;
+    height: 15px;
+    margin: 8px 0 0 15px;
+    background: url(../images/jd-sprites.png) no-repeat -82px 0;
+    background-size: 200px;
+}
+.input input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding: 0 20px 0 78px;
+    border: none;
+    background: transparent;
+}
+.main {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #FAFAFA;
+}
+.banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 187px;
+}
+/* 制作背景 */
+.banner-bg {
+    position: absolute;
+    left: -25%;
+    width: 150%;
+    height: 145px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-image: linear-gradient(to top, #E84D3B,#C82519);
+}
+.banner ul li {
+    position: absolute;
+    width: 100%;
+    height: 187px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 44px 3.333% 0;
+}
+.banner ul li img {
+	display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+.banner ul li img:nth-child(2) {
+    left: 100%;
+}
+.banner ul li img:nth-child(3) {
+    left: 200%;
+}
+.banner ul li img:nth-child(4) {
+    left: 300%;
+}
+.coupon {
+    width: 100%;
+}
+.coupon a {
+    float: left;
+    width: 33.3333%;
+}
+.coupon img {
+    display:block;
+    width: 100%;
+}
+nav {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav2 {
+    position: absolute;
+    left: 100%;
+}
+nav a {
+    float: left;
+    width: 20%;
+}
+nav a img {
+    display: block;
+    width: 100%;
+    margin: 10px auto 0;
+}
+/* 盒模型的属性需要先将元素转为盒子后才能生效 */
+nav a span {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    line-height: 22px;
+    color: #666666;
+    text-align: center;
+}
+/* 新人专享 */
+.new {
+    margin: 10px;
+    overflow: hidden;
+}
+.new a {
+    width: 50%;
+    float: left;
+}
+.new img {
+    display: block;
+    width: 100%;
+}
+/* 推荐分类 */
+.container-outer {
+    margin: 0 10px 10px 10px ;
+    background-color: #fff;
+    overflow: hidden;
+}
+.container-outer a{
+    display: block;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding: 6px 0 5px 10px;
+    text-align: center;
+}
+.container-outer a strong {
+    font-size: 16px;
+    color: rgb(34,34,34);
+}
+.container-outer a p {
+    font-size: 12px;
+    color: #222;
+    margin: 7px 0 0;
+}
+.container-outer a div {
+    box-sizing: border-box;
+    margin: 5px 4px 0;
+}
+.container-outer a img {
+    width: 100%;
+}
+/* 秒杀区域 */
+.seckill {
+    box-sizing: border-box;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 7px;
+}
+.title-wrap {
+    width: 100%;
+    height: 34px;
+    background: url(../images/title-wrap.png) no-repeat 0 0;
+    background-size: auto 34px;
+}
+.title-wrap a {
+    display: block;
+}
+.jd-sec {
+    float: left;
+    display: inline-block;
+    margin: 8px 5px 0 10px;
+}
+.sec-time {
+    float: left;
+    margin-top: 8px;
+}
+.sec-time span {
+    color: #ff2727;
+    font-size: 13px;
+    padding-left: 5px;
+}
+.sec-time img {
+    height: 17.5px;
+    padding-right: 5px;
+    margin-right: 4px;
+}
+.sec-time .time {
+    display: inline-block;
+    padding: 0;
+    background-image: linear-gradient(-140deg,#ff6152,#fa2c19);
+    background-color: #fa2c19;
+    border-radius: 3rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff
+}
+.more-seckill {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 48px;
+    padding-right: 22px;
+    line-height: 34px;
+    color: #f23030;
+    font-size: 12px;
+    text-align: right;
+}
+.more-seckill span {
+    position: absolute;
+    right: 7px;
+    top: 12px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #f23030;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 12px;
+}
+.goods {
+    margin: 0 6.25px;
+    background-color: pink;
+}
+.goods li {
+    float: left;
+    width: 20%;
+}
+.goods li div {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 1px;
+}
+.goods li a {
+    display: block;
+    width: 100%;
+}
+.goods li img {
+    display: block;
+    width: 100%;
+}
+.goods li p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
+.goods .new{
+    margin-top: 10px; 
+    color: #f23030;
+    font-weight: bold;
+}
+.goods .old {
+    margin: 4px 0 11px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.top1 {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin: 5px 0;
+    padding: 0 14px;
+    box-sizing: border-box;
+}
+.top1 span {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.top1 p {
+    margin: 0;
+    font-size: 12px;
+}
+.top1 a {
+    width: 50%;
+    padding: 0;
+}
+.top1 a img {
+    display: block;
+    margin: 7px 5px 0;
+}
+.top2 {
+    width: 25%;
+    padding: 6px 0 5px 10px;
+}
+.top2 a {
+    width: 100%;
+}
+.backToTop {
+    position: fixed;
+    bottom: 120px;
+    right: 9px;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: url(../images/backToTop.png) no-repeat center center;
+    background-size: 38px auto;
+}
