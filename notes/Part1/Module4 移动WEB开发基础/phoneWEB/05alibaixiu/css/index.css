@@ -18,6 +18,14 @@ body {
 .logo a {
     display: block;
 }
+.logo a span {
+    display: block;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
 .logo img {
     width: 100%;
     height: 100%;
@@ -37,4 +45,109 @@ nav a {
 nav a::before {
     margin-right: 7px;
     vertical-align: middle;
+}
+.main ul {
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.main li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.main a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.main a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main a p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 5px 10px 0;
+    width: 100%;
+    height: 36px;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+}
+.main .big {
+    width: 50%;
+    height: 266px;
+}
+.main .big p {
+    height: 41px;
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 41px;
+}
+.publish-box {
+    border-bottom: 1px solid #ccc;
+}
+.publish-box img {
+    padding-top: 10px;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+} 
+.hot {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 0 20px 20px;
+}
+.hot:hover {
+    text-decoration: none;
+}
+.hot button {
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+.hot p {
+    font-size: 12px;
+}
+
+/* 媒体查询 制作响应式效果 */
+/* 小屏及以上 */
+@media screen and (min-width: 768px) {
+    header .logo img {
+        margin: 0 auto;
+    }
+}
+/* 超小屏和小屏 */
+@media screen and (max-width: 991px) {
+    header nav a {
+        float: left;
+        width: 20%;
+    }
+}
+/* 超小屏 */
+@media screen and (max-width: 767px) {
+    header nav a {
+        font-size: 12px;
+    }
+    .main li {
+        width: 50%;
+    }
+    .main li:nth-child(1) {
+        width: 100%;
+    }
+    .main .publish-box h3 {
+        font-size: 16px;
+    }
 }
