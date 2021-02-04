@@ -70,6 +70,9 @@ ol {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 .top-banner {
   position: relative;
   width: 15rem;
@@ -95,11 +98,10 @@ ol {
   background: url(../images/close.png) no-repeat center center;
   background-size: 0.6rem auto;
 }
-
 .header {
   width: 15rem;
   height: 3.6rem;
-  background-color: #ffdb47;
+  background: linear-gradient(to right, #D21928, #E94D0B);
 }
 .header .header-top {
   display: flex;
@@ -145,6 +147,7 @@ ol {
   width: 0.72rem;
   height: 0.72rem;
   background: url(../images/search_btn.png) no-repeat 0 0;
+  background-size: 0.72rem;
 }
 .header .header-bottom a form {
   display: flex;
@@ -159,11 +162,13 @@ ol {
   padding: 0.06rem 0.4rem 0 1.3rem;
   border: none;
   border-radius: 0.64rem;
+  color: #999;
+  font-size: 0.36rem;
 }
 .banner {
   width: 15rem;
   height: 5.2rem;
-  background: url(../images/banner_bg.png) no-repeat 0 0;
+  background: linear-gradient(to right, #D21928, #E94D0B);
   background-size: 15rem auto;
 }
 .banner .banner-wrapper {
@@ -171,7 +176,6 @@ ol {
   height: 5.2rem;
   margin: 0 auto;
   overflow: hidden;
-  background-color: pink;
 }
 .banner .banner-wrapper ul {
   position: relative;
@@ -198,6 +202,35 @@ ol {
   width: 14.04rem;
   height: 5.2rem;
 }
+.banner2 {
+  width: 15rem;
+  height: 4.8rem;
+}
+.banner2 a {
+  display: block;
+  width: 15rem;
+  height: 4.8rem;
+}
+.banner2 a img {
+  display: block;
+  width: 15rem;
+  height: 4.8rem;
+}
+.tuijian {
+  width: 15rem;
+  height: 3.55rem;
+}
+.tuijian a {
+  display: block;
+  float: left;
+  width: 5rem;
+  height: 3.55rem;
+}
+.tuijian a img {
+  display: block;
+  width: 5rem;
+  height: 3.55rem;
+}
 .nav {
   width: 15rem;
   height: 6.16rem;
@@ -221,4 +254,54 @@ ol {
   line-height: 0.56rem;
   margin-top: 0.1rem;
   text-align: center;
+}
+.new-img-floor {
+  margin-top: 0.48rem;
+  overflow: hidden;
+}
+.new-img-floor a {
+  display: block;
+  float: left;
+}
+.new-img-floor a img {
+  display: block;
+  width: 3.74rem;
+  height: 4.68rem;
+}
+.new-img-floor a:nth-child(1) img {
+  width: 7.44rem;
+  height: 4.68rem;
+}
+.blank {
+  width: 15rem;
+  height: 0.48rem;
+}
+.section {
+  width: 14.04rem;
+  height: 5.16rem;
+  margin: 0 0.48rem;
+  background-color: #fff;
+}
+.section .section1 {
+  width: 7rem;
+  height: 5.16rem;
+}
+.section .section1 .title-wrapper {
+  width: 100%;
+  height: 1.16rem;
+  font-size: 0.48rem;
+}
+.section .section1 .title-wrapper .title {
+  width: 2.24rem;
+  height: 0.8rem;
+  font-weight: 700;
+}
+.section .section1 .title-wrapper .count span {
+  font-weight: 700;
+  border-radius: 0.12rem;
+  background-color: #FFCC00;
+}
+.section .break {
+  width: 0.04rem;
+  height: 5.16rem;
 }

@@ -16,6 +16,9 @@ ul,ol {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
 // top-banner区域
 .top-banner {   
     position: relative;
@@ -46,7 +49,7 @@ ul,ol {
 .header {
     width: 750rem / @baseFont;
     height: 180rem / @baseFont;
-    background-color: #ffdb47;
+    background: linear-gradient(to right,#D21928,#E94D0B);
     .header-top {
         display: flex;
         justify-content: space-between;
@@ -95,6 +98,7 @@ ul,ol {
                 width: 36rem / @baseFont;
                 height: 36rem / @baseFont;
                 background: url(../images/search_btn.png) no-repeat 0 0;
+                background-size: 36rem / @baseFont;
             }
             form {
                 display: flex;
@@ -108,6 +112,8 @@ ul,ol {
                     padding: 3rem / @baseFont 20rem / @baseFont 0 65rem / @baseFont;
                     border: none;
                     border-radius: 32rem / @baseFont;
+                    color: #999;
+                    font-size: 18rem / @baseFont;
                 }
             }
         }
@@ -117,14 +123,13 @@ ul,ol {
 .banner {
     width: 750rem / @baseFont;
     height: 260rem / @baseFont;
-    background: url(../images/banner_bg.png) no-repeat 0 0;
+    background: linear-gradient(to right,#D21928,#E94D0B);
     background-size: 750rem / @baseFont auto;
     .banner-wrapper {
         width: 702rem / @baseFont;
         height: 260rem / @baseFont;
         margin: 0 auto;
         overflow: hidden;
-        background-color: pink;
         ul {
             position: relative;
             width: 2200rem / @baseFont;
@@ -153,6 +158,36 @@ ul,ol {
         }
     }
 }
+.banner2 {
+    width: 15rem;
+    height: 4.8rem;
+    a {
+        display: block;
+        width: 15rem;
+        height: 4.8rem;
+        img {
+            display: block;
+            width: 15rem;
+            height: 4.8rem;
+        }
+    }
+}
+// 推荐banner区域
+.tuijian {
+    width: 15rem;
+    height: 3.55rem;
+    a {
+        display: block;
+        float: left;
+        width: 5rem;
+        height: 3.55rem;
+        img {
+            display: block;
+            width: 5rem;
+            height: 3.55rem;
+        }
+    }
+}
 // 导航区域
 .nav {
     width: 750rem / @baseFont;
@@ -176,5 +211,65 @@ ul,ol {
             margin-top: 5rem / @baseFont;
             text-align: center;
         }
+    }
+}
+// floor banner区域开始
+.new-img-floor {
+    margin-top: .48rem;
+    overflow: hidden;
+    a {
+        display: block;
+        float: left;
+        // margin-right: .076rem;
+        img {
+            display: block;
+            width: 3.74rem;
+            height: 4.68rem;
+        }
+    }
+    a:nth-child(1) {
+        img{
+        width: 7.44rem;
+        height: 4.68rem;
+
+        }
+    }
+}
+.blank {
+    width: 15rem;
+    height: .48rem;
+}
+.section {
+    width: 14.04rem;
+    height: 5.16rem;
+    margin: 0 .48rem;
+    background-color: #fff;
+    .section1 {
+        width: 7rem;
+        height: 5.16rem;
+        .title-wrapper {
+            width: 100%;
+            height: 1.16rem;
+            font-size: .48rem;
+            // 盒子塌陷 将上外边距改为padding即可
+            .title {
+                width: 2.24rem;
+                height: .8rem;
+                // margin: .36rem .16rem 0 .48rem;
+                font-weight: 700;
+            }
+            .count {
+                
+                span {
+                    font-weight: 700;
+                    border-radius: .12rem;
+                    background-color: #FFCC00;
+                }
+            }
+        }
+    }
+    .break {
+        width: .04rem;
+        height: 5.16rem;
     }
 }
