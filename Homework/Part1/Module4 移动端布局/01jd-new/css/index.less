@@ -79,13 +79,14 @@ img,a {
 }
 // 头部搜索区域
 .header {
+    // 对象在常态时遵循常规流。它就像是relative和fixed的合体，当在屏幕中时按常规流排版，当卷动到屏幕外时则表现如fixed
+    position: sticky;
+    top: 0;
+    left: 0;
     float: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
     width: 100%;
     height: 44rem / @baseFont;
     background-color: #B71113;
@@ -104,10 +105,14 @@ img,a {
         display: block;
         flex: 1;
         height: 30rem / @baseFont;
-        margin: 7rem / @baseFont 32rem / @baseFont 0 0;
+        margin-right:  32rem / @baseFont;
         background-color: #fff;
         border-radius: 15rem / @baseFont;
         overflow: hidden;
+        i {
+            background: url(../images/logo2.png) no-repeat 0 0;
+            background-size: ;
+        }
 
     }
     .login {
@@ -121,4 +126,8 @@ img,a {
             color: #fff;
         }
     }
+}
+.test {
+    width: 100%;
+    height: 1000rem / @baseFont;
 }
