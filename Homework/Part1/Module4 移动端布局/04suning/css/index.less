@@ -19,6 +19,9 @@ ul,ol {
 a {
     text-decoration: none;
 }
+p {
+    margin: 0;
+}
 // top-banner区域
 .top-banner {   
     position: relative;
@@ -241,35 +244,253 @@ a {
 }
 .section {
     width: 14.04rem;
-    height: 5.16rem;
+    height: 10.32rem;
     margin: 0 .48rem;
     background-color: #fff;
+    border-radius: .32rem;
     .section1 {
+        float: left;
         width: 7rem;
         height: 5.16rem;
+        font-size: .48rem;
         .title-wrapper {
             width: 100%;
             height: 1.16rem;
-            font-size: .48rem;
+            font-weight: 700;
             // 盒子塌陷 将上外边距改为padding即可
             .title {
+                display: inline-block;
                 width: 2.24rem;
                 height: .8rem;
-                // margin: .36rem .16rem 0 .48rem;
-                font-weight: 700;
+                margin: 0 .16rem 0 .48rem;
+                padding-top: .36rem;
             }
             .count {
-                
+                display: inline;
                 span {
-                    font-weight: 700;
                     border-radius: .12rem;
                     background-color: #FFCC00;
                 }
             }
         }
+        .info {
+            margin: 0 0 0 .48rem;
+            color: #999;
+        }
+        ul {
+            width: 100%;
+            margin-top: .1rem;
+            padding-left: .56rem;
+            li {
+                float: left;
+                width: 2.4rem;
+                margin-right: 1.1rem;
+                a {
+                    img {
+                        display: block;
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        margin: 0 auto;
+                    }
+                    p {
+                        height: .56rem;
+                        margin-top: .02rem;
+                        color: red;
+                        font-size: .44rem;
+                        line-height: .56rem;
+                        text-align: center;
+                    }
+                    .name {
+                        color: #000;
+                    }
+                }
+            }
+            li:last-child {
+                margin-right: 0;
+            }
+        }
     }
     .break {
+        float: left;
         width: .04rem;
         height: 5.16rem;
+        background-color: #999;
+    }
+}
+.gap {
+    width: 15rem;
+    height: .74rem;
+}
+// 猜你喜欢区域开始
+.guessULike {
+    .like-img {
+        width: 15rem;
+        a {
+            display: block;
+            margin: 0 .48rem;
+            img {
+                display: block;
+                width: 14.04rem;
+                height: 1.2rem;
+            }
+        }
+    }
+    .goods {
+        margin: 0 .48rem;
+    
+        ul {
+            float: left;
+            width: 6.84rem;
+            li {
+                width: 100%;
+                height: 10.56rem;
+                padding-bottom: .28rem;
+                margin-bottom: .36rem;
+                border-radius: .2rem;
+                overflow: hidden;
+                background-color: #fff;
+                a {
+                    display: block;
+                    font-size: .48rem;
+                    img {
+                        display: block;
+                        width: 6.84rem;
+                        height: 6.84rem;
+                    }
+                    p {
+                        margin: .36rem .24rem 0;
+                        max-width: 6.84rem;
+                        overflow: hidden;
+                        /* 文字不换行显示 */
+                        white-space: nowrap;
+                        /* 文字溢出部分使用.显示 */
+                        text-overflow: ellipsis;
+                        font-size: .48rem;
+                        font-weight: 700;
+                        color: #000;
+                    }
+                    .tag {
+                        margin: .22rem .24rem .48rem;
+                        span {
+                            display: inline-block;
+                            border-radius: .12rem;
+                            color: #000;
+                            &.tag1 {
+                                background-color: #FFCC00;
+                            }
+                            &.tag2 {
+                                background-color: #FEFBEE;
+                                border: .04rem solid #FFCC00;
+                            }
+                        }  
+                    }
+                    .price {
+                        margin-left: .24rem;
+                        color: #FF4422;
+                        .sym {
+                            font-size: .48rem;
+                        }
+                        .num1 {
+                            font-size: .64rem;
+                            font-weight: 700;
+                        }
+                        .appraise {
+                            padding-left: .2rem;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+        .list-right {
+            float: right;
+        }
+    }
+
+
+}
+.nav-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 15rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 1);
+    a {
+        display: block;
+        float: left;
+        width: 20%;
+        text-align: center;
+        i {
+            display: block;
+            width: .96rem;
+            height: .96rem;
+            margin: .24rem auto 0;
+            background: url(../images/nav1.png) no-repeat;
+            background-size: .96rem auto;
+        }
+        p {
+            font-size: .48rem;
+            color: #333;
+        }
+    }
+    a:nth-child(2) {
+        i {
+            background: url(../images/nav2.png) no-repeat;
+            background-size: .96rem auto;
+
+        }
+    }
+    a:nth-child(3) {
+        i {
+            background: url(../images/nav3.png) no-repeat;
+            background-size: .96rem auto;       
+        }
+    }
+    a:nth-child(4) {
+        i {
+            background: url(../images/nav4.png) no-repeat;
+            background-size: .96rem auto;
+        }
+    }
+    a:nth-child(5) {
+        i {
+            background: url(../images/nav5.png) no-repeat;
+            background-size: .96rem auto;
+        }
+    }
+    a:hover {
+        p {
+            font-weight: 700;
+        }
+    }
+}
+.login-app {
+    position: fixed;
+    bottom: 1.96rem;
+    left: 0;
+    a {
+        display: block;
+        width: 15rem;
+        height: 1.8rem;
+        img {
+            display: block;
+            width: 15rem;
+            height: 1.8rem;
+        }
+    }
+}
+.top {
+    position: fixed;
+    bottom: 3.84rem;
+    right: .32rem;
+    width: 2rem;
+    height: 2rem;
+    a {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        background: url(../images/top.png) no-repeat 0 0;
+        background-size: 2rem 2rem;
     }
 }

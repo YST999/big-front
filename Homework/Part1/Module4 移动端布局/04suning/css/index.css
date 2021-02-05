@@ -73,6 +73,9 @@ ol {
 a {
   text-decoration: none;
 }
+p {
+  margin: 0;
+}
 .top-banner {
   position: relative;
   width: 15rem;
@@ -278,30 +281,233 @@ a {
 }
 .section {
   width: 14.04rem;
-  height: 5.16rem;
+  height: 10.32rem;
   margin: 0 0.48rem;
   background-color: #fff;
+  border-radius: 0.32rem;
 }
 .section .section1 {
+  float: left;
   width: 7rem;
   height: 5.16rem;
+  font-size: 0.48rem;
 }
 .section .section1 .title-wrapper {
   width: 100%;
   height: 1.16rem;
-  font-size: 0.48rem;
+  font-weight: 700;
 }
 .section .section1 .title-wrapper .title {
+  display: inline-block;
   width: 2.24rem;
   height: 0.8rem;
-  font-weight: 700;
+  margin: 0 0.16rem 0 0.48rem;
+  padding-top: 0.36rem;
+}
+.section .section1 .title-wrapper .count {
+  display: inline;
 }
 .section .section1 .title-wrapper .count span {
-  font-weight: 700;
   border-radius: 0.12rem;
   background-color: #FFCC00;
 }
+.section .section1 .info {
+  margin: 0 0 0 0.48rem;
+  color: #999;
+}
+.section .section1 ul {
+  width: 100%;
+  margin-top: 0.1rem;
+  padding-left: 0.56rem;
+}
+.section .section1 ul li {
+  float: left;
+  width: 2.4rem;
+  margin-right: 1.1rem;
+}
+.section .section1 ul li a img {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 auto;
+}
+.section .section1 ul li a p {
+  height: 0.56rem;
+  margin-top: 0.02rem;
+  color: red;
+  font-size: 0.44rem;
+  line-height: 0.56rem;
+  text-align: center;
+}
+.section .section1 ul li a .name {
+  color: #000;
+}
+.section .section1 ul li:last-child {
+  margin-right: 0;
+}
 .section .break {
+  float: left;
   width: 0.04rem;
   height: 5.16rem;
+  background-color: #999;
+}
+.gap {
+  width: 15rem;
+  height: 0.74rem;
+}
+.guessULike .like-img {
+  width: 15rem;
+}
+.guessULike .like-img a {
+  display: block;
+  margin: 0 0.48rem;
+}
+.guessULike .like-img a img {
+  display: block;
+  width: 14.04rem;
+  height: 1.2rem;
+}
+.guessULike .goods {
+  margin: 0 0.48rem;
+}
+.guessULike .goods ul {
+  float: left;
+  width: 6.84rem;
+}
+.guessULike .goods ul li {
+  width: 100%;
+  height: 10.56rem;
+  padding-bottom: 0.28rem;
+  margin-bottom: 0.36rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+.guessULike .goods ul li a {
+  display: block;
+  font-size: 0.48rem;
+}
+.guessULike .goods ul li a img {
+  display: block;
+  width: 6.84rem;
+  height: 6.84rem;
+}
+.guessULike .goods ul li a p {
+  margin: 0.36rem 0.24rem 0;
+  max-width: 6.84rem;
+  overflow: hidden;
+  /* 文字不换行显示 */
+  white-space: nowrap;
+  /* 文字溢出部分使用.显示 */
+  text-overflow: ellipsis;
+  font-size: 0.48rem;
+  font-weight: 700;
+  color: #000;
+}
+.guessULike .goods ul li a .tag {
+  margin: 0.22rem 0.24rem 0.48rem;
+}
+.guessULike .goods ul li a .tag span {
+  display: inline-block;
+  border-radius: 0.12rem;
+  color: #000;
+}
+.guessULike .goods ul li a .tag span.tag1 {
+  background-color: #FFCC00;
+}
+.guessULike .goods ul li a .tag span.tag2 {
+  background-color: #FEFBEE;
+  border: 0.04rem solid #FFCC00;
+}
+.guessULike .goods ul li a .price {
+  margin-left: 0.24rem;
+  color: #FF4422;
+}
+.guessULike .goods ul li a .price .sym {
+  font-size: 0.48rem;
+}
+.guessULike .goods ul li a .price .num1 {
+  font-size: 0.64rem;
+  font-weight: 700;
+}
+.guessULike .goods ul li a .price .appraise {
+  padding-left: 0.2rem;
+  color: #999;
+}
+.guessULike .goods .list-right {
+  float: right;
+}
+.nav-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 15rem;
+  height: 2rem;
+  background-color: #ffffff;
+}
+.nav-footer a {
+  display: block;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.nav-footer a i {
+  display: block;
+  width: 0.96rem;
+  height: 0.96rem;
+  margin: 0.24rem auto 0;
+  background: url(../images/nav1.png) no-repeat;
+  background-size: 0.96rem auto;
+}
+.nav-footer a p {
+  font-size: 0.48rem;
+  color: #333;
+}
+.nav-footer a:nth-child(2) i {
+  background: url(../images/nav2.png) no-repeat;
+  background-size: 0.96rem auto;
+}
+.nav-footer a:nth-child(3) i {
+  background: url(../images/nav3.png) no-repeat;
+  background-size: 0.96rem auto;
+}
+.nav-footer a:nth-child(4) i {
+  background: url(../images/nav4.png) no-repeat;
+  background-size: 0.96rem auto;
+}
+.nav-footer a:nth-child(5) i {
+  background: url(../images/nav5.png) no-repeat;
+  background-size: 0.96rem auto;
+}
+.nav-footer a:hover p {
+  font-weight: 700;
+}
+.login-app {
+  position: fixed;
+  bottom: 1.96rem;
+  left: 0;
+}
+.login-app a {
+  display: block;
+  width: 15rem;
+  height: 1.8rem;
+}
+.login-app a img {
+  display: block;
+  width: 15rem;
+  height: 1.8rem;
+}
+.top {
+  position: fixed;
+  bottom: 3.84rem;
+  right: 0.32rem;
+  width: 2rem;
+  height: 2rem;
+}
+.top a {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/top.png) no-repeat 0 0;
+  background-size: 2rem 2rem;
 }
