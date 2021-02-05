@@ -1,0 +1,174 @@
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+/* 给body样式初始化 */
+body {
+  min-width: 320px;
+  max-width: 540px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: -apple-system, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+/* 清除高亮并设置为透明 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+/* 添加此属性来给iOS的按钮和输入框自定义样式 */
+input {
+  -webkit-appearance: none;
+}
+/* 禁用长按页面时弹出菜单 */
+img,
+a {
+  -webkit-touch-callout: none;
+}
+.download {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  line-height: 1rem;
+}
+.download .left {
+  flex: 2;
+  background-color: #232326;
+  color: #fff;
+}
+.download .left .close {
+  float: left;
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-left: 0.32rem;
+  margin-top: 0.34rem;
+}
+.download .left .logo {
+  float: left;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin: 0.15rem 0.64rem 0 0.32rem;
+}
+.download .left span {
+  display: block;
+  float: left;
+  width: 1.44rem;
+}
+.download .left span.title2 {
+  width: 1.68rem;
+  font-size: 0.24rem;
+  color: #999999;
+}
+.download .right {
+  flex: 1;
+  background-color: #CD2525;
+  color: #fff;
+  text-align: center;
+}
+.header {
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 0.88rem;
+  background-color: #B71113;
+}
+.header .s-btn {
+  display: block;
+  width: 0.8rem;
+  height: 0.88rem;
+}
+.header .s-btn img {
+  display: block;
+  width: 0.4rem;
+  height: 0.36rem;
+  padding: 0.28rem 0 0 0.3rem;
+}
+.header .search {
+  display: block;
+  flex: 1;
+  height: 0.6rem;
+  margin: 0.14rem 0.64rem 0 0;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.header .login {
+  display: block;
+  width: 0.8rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+}
+.header .login span {
+  margin: 0.2rem 0;
+  font-size: 0.28rem;
+  color: #fff;
+}
