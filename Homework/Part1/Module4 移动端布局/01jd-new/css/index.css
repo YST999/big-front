@@ -59,7 +59,7 @@ html {
 /* 给body样式初始化 */
 body {
   min-width: 320px;
-  max-width: 540px;
+  max-width: 750px;
   margin: 0 auto;
   background-color: #fff;
   font-size: 14px;
@@ -74,6 +74,14 @@ ol {
   margin: 0;
   list-style: none;
   padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 p {
   margin: 0;
@@ -156,6 +164,7 @@ a {
   padding: 0.28rem 0 0 0.3rem;
 }
 .header .search {
+  position: relative;
   display: block;
   flex: 1;
   height: 0.6rem;
@@ -164,9 +173,41 @@ a {
   border-radius: 0.3rem;
   overflow: hidden;
 }
-.header .search i {
+.header .search .i1 {
+  float: left;
+  display: block;
+  width: 0.4rem;
+  height: 0.3rem;
+  margin: 0.16rem 0.16rem 0 0.3rem;
   background: url(../images/logo2.png) no-repeat 0 0;
-  background-size: ;
+  background-size: 0.4rem auto;
+}
+.header .search .i1::after {
+  position: absolute;
+  top: 0.16rem;
+  left: 0.8rem;
+  content: '';
+  display: block;
+  float: left;
+  width: 0.04rem;
+  height: 0.3rem;
+  background-color: #E8E8E8;
+}
+.header .search .i2 {
+  display: block;
+  float: left;
+  width: 0.36rem;
+  height: 0.3rem;
+  margin: 0.16rem 0 0 0.2rem;
+  background: url(../images/jd-sprites.png) no-repeat -1.64rem 0;
+  background-size: 4rem;
+}
+.header .search input {
+  position: absolute;
+  line-height: 0.6rem;
+  left: 1.56rem;
+  padding: 0;
+  border: 0;
 }
 .header .login {
   display: block;
@@ -179,7 +220,206 @@ a {
   font-size: 0.28rem;
   color: #fff;
 }
-.test {
+main {
   width: 100%;
-  height: 20rem;
+  margin-top: 0.88rem;
+  background-color: #F5F5F5;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  overflow: hidden;
+}
+.banner .bg {
+  position: absolute;
+  left: -25%;
+  width: 150%;
+  height: 2rem;
+  background-image: linear-gradient(to bottom, #B71113, #E74633);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.banner .banner-list li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.12rem;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 0.36rem;
+}
+.banner .banner-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.banner .banner-list li a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner2 {
+  width: 100%;
+  display: flex;
+}
+.banner2 a {
+  flex: 1;
+  float: left;
+}
+.banner2 a img {
+  width: 100%;
+  display: block;
+}
+.nav {
+  width: 100%;
+}
+.nav li {
+  width: 20%;
+  float: left;
+}
+.nav li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nav li a img {
+  display: block;
+  margin-top: 0.5rem;
+  width: 1.152rem;
+}
+.nav li a span {
+  padding-top: 0.3rem;
+  font-size: 0.36rem;
+  color: #666;
+}
+.footer-container {
+  box-sizing: border-box;
+  width: 96.21%;
+  margin: 0 0.288rem 0.288rem 0.288rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+.footer-container a {
+  display: block;
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0.1872rem 0 0.144rem 0.288rem;
+}
+.footer-container a h4 {
+  color: #333;
+  font-size: 0.44rem;
+}
+.footer-container a p {
+  font-size: 0.32rem;
+  color: #333;
+}
+.footer-container a div {
+  width: 1.728rem;
+  height: 1.728rem;
+  margin: 0.275rem 0.2rem 0;
+}
+.footer-container a div img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.seckill {
+  margin: 0.288rem;
+  padding-left: 0.24rem;
+  background-color: #fff;
+  border-radius: 0.24rem;
+  overflow: hidden;
+}
+.seckill .title {
+  width: 100%;
+  height: 0.98rem;
+  background: url(../images/title-wrap.png) no-repeat center center;
+  background-size: contain;
+}
+.seckill .title .name {
+  display: block;
+  float: left;
+  font-size: 0.4rem;
+  padding: 0.3rem 0.2rem 0 0;
+}
+.seckill .title .time-wrapper {
+  float: left;
+  position: relative;
+  padding-top: 0.3rem;
+  height: 0.68rem;
+  color: #ff2727;
+  vertical-align: middle;
+}
+.seckill .title .time-wrapper .hour {
+  float: left;
+  font-size: 0.4rem;
+  margin-right: 0.7rem;
+}
+.seckill .title .time-wrapper .hour::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0.26rem;
+  left: 0.4rem;
+  width: 0.58rem;
+  height: 0.5rem;
+  background: url(../images/time-wrapper.png) no-repeat 0 0;
+  background-size: contain;
+}
+.seckill .title .time-wrapper span {
+  display: block;
+  float: left;
+  margin-right: 0.06rem;
+}
+.seckill .title .time-wrapper span.time {
+  background-color: #ff2727;
+  border-radius: 0.06rem;
+  color: #fff;
+}
+.seckill .title .more {
+  display: block;
+  position: relative;
+  height: 0.98rem;
+  padding-top: 0.3rem;
+  padding-right: 0.6rem;
+  float: right;
+  text-align: center;
+}
+.seckill .title .more span {
+  font-size: 0.36rem;
+  color: #ff2727;
+}
+.seckill .title .more span::after {
+  display: block;
+  content: ">";
+  position: absolute;
+  top: 0.36rem;
+  right: 0.16rem;
+  width: 0.32rem;
+  height: 0.32rem;
+  background-color: #ff2727;
+  border-radius: 0.16rem;
+  font-weight: 700;
+  color: #fff;
+}
+.seckill ul {
+  display: flex;
+  width: 100%;
+}
+.seckill ul li {
+  flex: 1 1 100px;
+}
+.seckill ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

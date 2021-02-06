@@ -2,7 +2,7 @@
 /* 给body样式初始化 */
 body {
     min-width: 320px;;
-    max-width: 540px;
+    max-width: 750px;
     margin: 0 auto;
     background-color: #fff;
     font-size: 14px;
@@ -16,6 +16,9 @@ ul,ol {
     margin: 0;
     list-style: none;
     padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
 }
 p {
     margin: 0;
@@ -102,6 +105,7 @@ img,a {
         }
     }
     .search {
+        position: relative;
         display: block;
         flex: 1;
         height: 30rem / @baseFont;
@@ -109,11 +113,42 @@ img,a {
         background-color: #fff;
         border-radius: 15rem / @baseFont;
         overflow: hidden;
-        i {
+        .i1 {
+            float: left;
+            display: block;
+            width: 20rem / @baseFont; 
+            height: 15rem / @baseFont;
+            margin: 8rem / @baseFont 8rem / @baseFont 0 15rem / @baseFont;  
             background: url(../images/logo2.png) no-repeat 0 0;
-            background-size: ;
+            background-size: 20rem / @baseFont auto;
         }
-
+        .i1::after {
+            position: absolute;
+            top: 8rem / @baseFont;
+            left: 40rem / @baseFont;
+            content: '';
+            display: block;
+            float: left;
+            width: 2rem / @baseFont;
+            height: 15rem / @baseFont;
+            background-color: #E8E8E8;
+        }
+        .i2 {
+            display: block;
+            float: left;
+            width: 18rem / @baseFont;
+            height: 15rem / @baseFont;
+            margin: 8rem / @baseFont 0 0 10rem / @baseFont;
+            background: url(../images/jd-sprites.png) no-repeat -82rem / @baseFont 0;
+            background-size: 200rem / @baseFont;
+        }
+        input {
+            position: absolute;
+            line-height: 30rem / @baseFont;
+            left: 78rem / @baseFont;
+            padding: 0;
+            border: 0;
+        }
     }
     .login {
         display: block;
@@ -127,7 +162,217 @@ img,a {
         }
     }
 }
-.test {
+main {
     width: 100%;
-    height: 1000rem / @baseFont;
+    margin-top: 44rem / @baseFont;
+    background-color: #F5F5F5;
+}
+// banner区域
+.banner {
+    position: relative;
+    width: 100%;
+    height: 225rem / @baseFont;
+    overflow: hidden;
+    .bg {
+        position: absolute;
+        left: -25%;
+        width: 150%;
+        height: 100rem / @baseFont;
+        background-image: linear-gradient(to bottom,#B71113,#E74633);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    .banner-list {
+        li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 206rem / @baseFont;
+            float: left;
+            box-sizing: border-box;
+            padding: 0 18rem / @baseFont;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 15rem / @baseFont;
+                overflow: hidden;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+// banner2区域
+.banner2 {
+    width: 100%;
+    display: flex;
+    a {
+        flex: 1;
+        float: left;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+.nav {
+    width: 100%;
+    li {
+
+        width: 20%;
+        float: left;
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            img {
+                display: block;
+                margin-top: .5rem;
+                width: 57.6rem / @baseFont;
+            }
+            span {
+                padding-top: .3rem;
+                font-size: 18rem / @baseFont;
+                color: #666;
+            }
+            
+        }
+    }
+}
+.footer-container {
+    box-sizing: border-box;
+    width: 96.21%;    
+    margin: 0 14.4rem / @baseFont 14.4rem / @baseFont 14.4rem / @baseFont;
+    background-color: #fff;
+    overflow: hidden;
+    a {
+        display: block;
+        float: left;
+        width: 25%;
+        box-sizing: border-box;
+        padding: 9.36rem / @baseFont 0 7.2rem / @baseFont 14.4rem / @baseFont;
+        h4 {
+            color: #333;
+            font-size: 22rem / @baseFont;
+        }
+        p {
+            font-size: 16rem / @baseFont;
+            color: #333;
+        }
+        div {
+            width: 86.4rem / @baseFont;
+            height: 86.4rem / @baseFont;
+            margin: .275rem .2rem 0;
+            img {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                text-align: center;
+            }
+        }
+    }
+
+}
+.seckill {
+    margin: 14.4rem / @baseFont;
+    padding-left: 12rem / @baseFont;
+    background-color: #fff;
+    border-radius: 12rem / @baseFont;
+    overflow: hidden;
+    .title {
+        width: 100%;
+        height: 49rem / @baseFont;
+        background: url(../images/title-wrap.png) no-repeat center center;
+        background-size: contain;
+        .name {
+            display: block;
+            float: left;
+            font-size: 20rem / @baseFont;
+            padding: 15rem / @baseFont 10rem / @baseFont 0 0; 
+        }
+        .time-wrapper {
+            float: left;
+            position: relative;
+            padding-top: 15rem / @baseFont;
+            height: 34rem / @baseFont;
+            color: #ff2727;
+            vertical-align: middle;
+            .hour {
+                float: left;
+                font-size: 20rem / @baseFont;
+                margin-right: 35rem / @baseFont;
+            }
+            .hour::after {
+                display: block;
+                content: '';
+                position: absolute;
+                top: 13rem / @baseFont;
+                left: 20rem / @baseFont;
+                width: 29rem / @baseFont;
+                height: 25rem / @baseFont;
+                background: url(../images/time-wrapper.png) no-repeat 0 0;
+                background-size: contain;
+            }
+            span {
+                display: block;
+                float: left;
+                margin-right: 3rem / @baseFont;
+                &.time {
+                    background-color: #ff2727;
+                    border-radius: 3rem / @baseFont;
+                    color: #fff;
+                }
+            }
+
+        }
+        .more {
+            display: block;
+            position: relative;
+            height:49rem / @baseFont;
+            padding-top: 15rem / @baseFont;
+            padding-right: 30rem / @baseFont;
+            float: right;
+            text-align: center;
+            span {
+                font-size: 18rem / @baseFont;
+                color:#ff2727;
+            }
+            span::after {
+                display: block;
+                content: ">";
+                position: absolute;
+                top: 18rem / @baseFont;
+                right: 8rem / @baseFont;
+                width: 16rem / @baseFont;
+                height: 16rem / @baseFont;
+                background-color: #ff2727;
+                border-radius: 8rem / @baseFont;
+                font-weight: 700;
+                color: #fff;
+            }            
+        }
+
+    }
+    ul {
+        display: flex;
+        width: 100%;
+        li {
+            flex: 1 1 100px;
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+    }
 }
