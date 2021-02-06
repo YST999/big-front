@@ -127,10 +127,10 @@ a {
 .download .left span {
   display: block;
   float: left;
-  width: 1.44rem;
+  width: 3rem;
 }
 .download .left span.title2 {
-  width: 1.68rem;
+  width: 3.5rem;
   font-size: 0.24rem;
   color: #999999;
 }
@@ -139,6 +139,7 @@ a {
   background-color: #CD2525;
   color: #fff;
   text-align: center;
+  font-size: 0.28rem;
 }
 .header {
   position: sticky;
@@ -211,12 +212,13 @@ a {
 }
 .header .login {
   display: block;
-  width: 0.8rem;
+  width: 1.3rem;
   height: 0.88rem;
   line-height: 0.88rem;
 }
 .header .login span {
-  margin: 0.2rem 0;
+  float: right;
+  margin: 0.16rem 0.2rem 0.16rem 0;
   font-size: 0.28rem;
   color: #fff;
 }
@@ -416,10 +418,35 @@ main {
 }
 .seckill ul li {
   flex: 1 1 100px;
+  width: 2.34rem;
 }
 .seckill ul li a {
+  width: 100%;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.seckill ul li a div {
+  padding: 0.06rem;
+  width: 100%;
+}
+.seckill ul li a div img {
+  width: 100%;
+}
+.seckill ul li a p {
+  padding: 0.06rem 0;
+  font-size: 0.32rem;
+}
+.seckill ul li a p.old {
+  color: #999999;
+  text-decoration: line-through;
+}
+.seckill ul li a p.new {
+  color: #ff2727;
+  font-weight: 600;
+}
+.seckill ul li a p .sym {
+  font-size: 0.24rem;
 }

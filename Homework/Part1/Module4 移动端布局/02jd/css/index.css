@@ -59,10 +59,12 @@ img,a {
 .header-tips div:nth-child(3) {
     float: left;
     width: 57%;
+	height: 50px;
 }
 .header-tips div:nth-child(4) {
     float: left;
     width: 25%;
+		height: 50px;
     background-color: #cd2525;
 }
 .header {

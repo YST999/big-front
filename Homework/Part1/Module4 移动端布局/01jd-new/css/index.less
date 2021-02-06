@@ -63,9 +63,9 @@ img,a {
         span {
             display: block;
             float: left;
-            width: 72rem / @baseFont;
+            width: 3rem;
             &.title2 {
-                width: 84rem / @baseFont;
+                width: 3.5rem;
                 font-size: 12rem / @baseFont;
                 color: #999999;
             }
@@ -77,6 +77,7 @@ img,a {
         background-color: #CD2525;
         color: #fff;
         text-align: center;
+        font-size: 14rem / @baseFont;
     }
     
 }
@@ -152,11 +153,12 @@ img,a {
     }
     .login {
         display: block;
-        width: 40rem / @baseFont;
+        width: 65rem / @baseFont;
         height: 44rem / @baseFont;
         line-height: 44rem / @baseFont;
         span {
-            margin: 10rem / @baseFont 0;
+            float: right;
+            margin: 8rem / @baseFont 0.2rem 8rem / @baseFont 0;
             font-size: 14rem / @baseFont;
             color: #fff;
         }
@@ -365,12 +367,38 @@ main {
         width: 100%;
         li {
             flex: 1 1 100px;
+            width: 117rem / @baseFont;
             a {
+                width: 100%;
                 display: flex;
+                box-sizing: border-box;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-
+                div {
+                    padding: 3rem / @baseFont;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                p {
+                    padding: 3rem / @baseFont 0;
+                    font-size: 16rem / @baseFont;
+                    &.old {
+                        color: #999999;
+                        text-decoration: line-through;
+                    }
+                    &.new {
+                        color: #ff2727;
+                        font-weight: 600;
+                    }
+                    .sym {
+                        font-size: 12rem / @baseFont;
+                    }
+                }
+            
+                
             }
 
         }
