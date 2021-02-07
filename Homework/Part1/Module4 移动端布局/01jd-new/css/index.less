@@ -94,15 +94,17 @@ img,a {
     width: 100%;
     height: 44rem / @baseFont;
     background-color: #B71113;
+    z-index: 20;
     .s-btn {
         display: block;
         width: 40rem / @baseFont;
         height: 44rem / @baseFont;
+        margin-right: 10rem / @baseFont;
         img {
             display: block;
             width: 20rem / @baseFont;
             height: 18rem / @baseFont;
-            padding: 14rem / @baseFont 0 0 15rem / @baseFont;
+            padding: 13rem / @baseFont 0 0 15rem / @baseFont;
         }
     }
     .search {
@@ -156,9 +158,9 @@ img,a {
         width: 65rem / @baseFont;
         height: 44rem / @baseFont;
         line-height: 44rem / @baseFont;
+        text-align: left;
         span {
-            float: right;
-            margin: 8rem / @baseFont 0.2rem 8rem / @baseFont 0;
+            // margin: 8rem / @baseFont 0.2rem 8rem / @baseFont 0;
             font-size: 14rem / @baseFont;
             color: #fff;
         }
@@ -282,6 +284,7 @@ main {
     }
 
 }
+// 秒杀区域
 .seckill {
     margin: 14.4rem / @baseFont;
     padding-left: 12rem / @baseFont;
@@ -348,16 +351,14 @@ main {
             }
             span::after {
                 display: block;
-                content: ">";
+                content: "";
                 position: absolute;
                 top: 18rem / @baseFont;
-                right: 8rem / @baseFont;
+                right: 9rem / @baseFont;
                 width: 16rem / @baseFont;
                 height: 16rem / @baseFont;
-                background-color: #ff2727;
-                border-radius: 8rem / @baseFont;
-                font-weight: 700;
-                color: #fff;
+                background: url(../images/more.png) no-repeat 0 0;
+                background-size: contain;
             }            
         }
 
@@ -382,12 +383,13 @@ main {
                         width: 100%;
                     }
                 }
-                p {
+                
+                span {
                     padding: 3rem / @baseFont 0;
                     font-size: 16rem / @baseFont;
                     &.old {
+                        position: relative;
                         color: #999999;
-                        text-decoration: line-through;
                     }
                     &.new {
                         color: #ff2727;
@@ -396,6 +398,16 @@ main {
                     .sym {
                         font-size: 12rem / @baseFont;
                     }
+                    hr {
+                        position: absolute;
+                        top: 15rem / @baseFont;
+                        height: 1rem / @baseFont;
+                        width: 30rem / @baseFont;
+                        border: 0;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #999;
+                    }
                 }
             
                 
@@ -403,4 +415,124 @@ main {
 
         }
     }
+}
+// 图片展示区域开始
+.footer-graphic {
+    margin: 0 14.4rem / @baseFont 14.4rem / @baseFont 14.4rem / @baseFont;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        overflow: hidden;
+        li {
+            margin-top: 15rem / @baseFont;
+            margin-right: 45rem / @baseFont;
+            &:nth-child(4) {
+                margin-right: 0;
+                text-align: right;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                img {
+                    display: block;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+// 推荐区域
+.recommend {
+    display: flex;
+    flex-direction: column;
+    margin: 0 14.4rem / @baseFont 14.4rem / @baseFont 14.4rem / @baseFont;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 15rem / @baseFont;
+    .top {
+        flex: 1;
+        display: flex;
+        width: 100%;
+        padding: 10rem / @baseFont 0 0 12rem / @baseFont;
+        .left {
+            flex: 1;
+            a {
+                display: block;
+                width: 100% ;
+                h4 {
+                    font-size: 24rem / @baseFont;
+                    font-weight: 700;
+                    color: #000;
+                }
+                p {
+                    margin-bottom: 5rem / @baseFont;
+                    font-size: 18rem / @baseFont;
+                    color: #74787E;
+                }
+                img {
+                    display: inline-block;
+                    width: 100rem / @baseFont;
+                    height: 100rem / @baseFont;
+                    margin-right: 30rem / @baseFont;
+                }
+            }
+            .bottom {
+                display: flex;
+                a {
+                    flex: 1;
+                }
+            }
+        }
+
+    }
+
+}
+.guess {
+    margin: 0 14.4rem / @baseFont 14.4rem / @baseFont 14.4rem / @baseFont;
+    display: flex;
+    justify-content:space-between;
+    .left .right{
+        li {
+            width: 100%;
+            border-radius: 10rem / @baseFont;
+            background-color: #fff;
+            a {
+                display: block;
+                width: 100%;
+
+            }
+        }
+    }
+}
+.backToTop {
+    position: fixed;
+    bottom: 120px;
+    right: 9px;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: url(../images/backToTop.png) no-repeat center center;
+    background-size: 38px auto;
+}
+.nav-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 hsl(0deg 6% 58% / 60%);
+}
+.nav-bottom a {
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.nav-bottom a img {
+    width: 100%;
+    height: 100%;
 }

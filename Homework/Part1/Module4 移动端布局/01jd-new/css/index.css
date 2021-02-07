@@ -152,17 +152,19 @@ a {
   width: 100%;
   height: 0.88rem;
   background-color: #B71113;
+  z-index: 20;
 }
 .header .s-btn {
   display: block;
   width: 0.8rem;
   height: 0.88rem;
+  margin-right: 0.2rem;
 }
 .header .s-btn img {
   display: block;
   width: 0.4rem;
   height: 0.36rem;
-  padding: 0.28rem 0 0 0.3rem;
+  padding: 0.26rem 0 0 0.3rem;
 }
 .header .search {
   position: relative;
@@ -215,10 +217,9 @@ a {
   width: 1.3rem;
   height: 0.88rem;
   line-height: 0.88rem;
+  text-align: left;
 }
 .header .login span {
-  float: right;
-  margin: 0.16rem 0.2rem 0.16rem 0;
   font-size: 0.28rem;
   color: #fff;
 }
@@ -401,16 +402,14 @@ main {
 }
 .seckill .title .more span::after {
   display: block;
-  content: ">";
+  content: "";
   position: absolute;
   top: 0.36rem;
-  right: 0.16rem;
+  right: 0.18rem;
   width: 0.32rem;
   height: 0.32rem;
-  background-color: #ff2727;
-  border-radius: 0.16rem;
-  font-weight: 700;
-  color: #fff;
+  background: url(../images/more.png) no-repeat 0 0;
+  background-size: contain;
 }
 .seckill ul {
   display: flex;
@@ -435,18 +434,141 @@ main {
 .seckill ul li a div img {
   width: 100%;
 }
-.seckill ul li a p {
+.seckill ul li a span {
   padding: 0.06rem 0;
   font-size: 0.32rem;
 }
-.seckill ul li a p.old {
+.seckill ul li a span.old {
+  position: relative;
   color: #999999;
-  text-decoration: line-through;
 }
-.seckill ul li a p.new {
+.seckill ul li a span.new {
   color: #ff2727;
   font-weight: 600;
 }
-.seckill ul li a p .sym {
+.seckill ul li a span .sym {
   font-size: 0.24rem;
+}
+.seckill ul li a span hr {
+  position: absolute;
+  top: 0.3rem;
+  height: 0.02rem;
+  width: 0.6rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #999;
+}
+.footer-graphic {
+  margin: 0 0.288rem 0.288rem 0.288rem;
+}
+.footer-graphic ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+.footer-graphic ul li {
+  margin-top: 0.3rem;
+  margin-right: 0.9rem;
+}
+.footer-graphic ul li:nth-child(4) {
+  margin-right: 0;
+  text-align: right;
+}
+.footer-graphic ul li a {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.footer-graphic ul li a img {
+  display: block;
+  width: 80%;
+}
+.recommend {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.288rem 0.288rem 0.288rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+.recommend .top {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  padding: 0.2rem 0 0 0.24rem;
+}
+.recommend .top .left {
+  flex: 1;
+}
+.recommend .top .left a {
+  display: block;
+  width: 100% ;
+}
+.recommend .top .left a h4 {
+  font-size: 0.48rem;
+  font-weight: 700;
+  color: #000;
+}
+.recommend .top .left a p {
+  margin-bottom: 0.1rem;
+  font-size: 0.36rem;
+  color: #74787E;
+}
+.recommend .top .left a img {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.6rem;
+}
+.recommend .top .left .bottom {
+  display: flex;
+}
+.recommend .top .left .bottom a {
+  flex: 1;
+}
+.guess {
+  margin: 0 0.288rem 0.288rem 0.288rem;
+  display: flex;
+  justify-content: space-between;
+}
+.guess .left .right li {
+  width: 100%;
+  border-radius: 0.2rem;
+  background-color: #fff;
+}
+.guess .left .right li a {
+  display: block;
+  width: 100%;
+}
+.backToTop {
+  position: fixed;
+  bottom: 120px;
+  right: 9px;
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: url(../images/backToTop.png) no-repeat center center;
+  background-size: 38px auto;
+}
+.nav-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 hsl(0deg 6% 0.96666667%);
+}
+.nav-bottom a {
+  display: block;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.nav-bottom a img {
+  width: 100%;
+  height: 100%;
 }
