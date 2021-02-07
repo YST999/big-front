@@ -88,9 +88,8 @@ CSS normalize.css
 3. Normalize.css是模块化的，提高了易用性
 4. 文档详细
 
-CSS3盒子模型 box-sizing
-
-此盒子的宽度里包含了border和padding。
+怪异盒子模型 box-sizing: border-box;
+此时盒子的宽度里包含了border padding content。
 
 移动端技术选型
 
@@ -106,8 +105,6 @@ CSS3盒子模型 box-sizing
 * 媒体查询
 * bootstrap
 
-
-
 ### 流式布局(百分比布局)
 
 1. 也称非固定像素布局
@@ -120,8 +117,6 @@ CSS3盒子模型 box-sizing
 
 * max-width/max-height
 * min-width/min-height
-
-
 
 #### 京东流式布局
 
@@ -136,12 +131,10 @@ CSS3盒子模型 box-sizing
 1. background-image （详情见MDN）
 
    1. 取值：
-
       * none：表示无背景图的关键字
       * image：用来标记将要显示的图片，支持多背景设置，‘，’分隔
 
    2. 语法：
-
       ```css
         background-image:
             url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
@@ -286,8 +279,6 @@ align-content也可以控制侧轴单行子元素的排列方式，但是此时�
 1. 设置主轴是y轴
 2. 侧轴设置为居中对齐 
 
-
-
 ### 苏宁rem布局
 
 ##### rem:
@@ -391,7 +382,7 @@ rem实际开发适配方案
 
 1. 苏宁轮播图上的按钮 
 
-计算rem的公式：
+计算rem的公式：UI 图测量的尺寸 / 根元素 font-size
 
 ### 响应式开发
 
