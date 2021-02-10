@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 转字符串
+        console.log(true.toString());
+        console.log(String(undefined));
+        console.log(String(null));
+        console.log(true + "")
+        console.log(23 + "")
+        // 转数字
+        console.log(Number("123")) // 123
+        console.log(Number(""))    // 0
+        console.log(Number("    "))// 0
+        console.log(Number("123sgf")) //NaN 
+        console.log(Number(true)) // 1
+        console.log(Number(false)) // 0
+        console.log(Number(undefined)) // NaN
+        console.log(Number(null)) // 0
+        // 字符串转数字
+        console.log(parseInt(122.34)); // 122
+        console.log(parseInt("122.35abc")); // 122
+        console.log(parseInt("122.34")); // 122
+        // 转为boolean
+        // false
+        console.log(Boolean(""));
+        console.log(Boolean(0));
+        console.log(Boolean(null));
+        console.log(Boolean(NaN));
+        console.log(Boolean(undefined));
+        // true
+        console.log(Boolean(123));
+        console.log(Boolean("  "));
+        console.log(Boolean(Infinity));
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
