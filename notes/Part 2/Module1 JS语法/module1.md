@@ -162,7 +162,7 @@ isNaN():判断一个数是不是NaN
 var a = 1,b = 3,c = 5;
 ```
 
-数据类型
+#### 数据类型
 
 * Number 数字类型
 
@@ -277,3 +277,122 @@ true：非0 非NaN数字、非空字符串
         console.log(Boolean(Infinity));
 ```
 
+#### 操作符(operator)
+
+##### 算术运算符
+
++- * / %
+
+正常情况：数字与数字进行运算
+
+非正常情况1：有特殊字面量参与运算
+
+1. 有NaN参与时，结果为NaN
+2. 有Infinity参与时，结果视情况而定
+
+```javascript
+        // NaN参与的运算，结果都是NaN
+        console.log(NaN + 5);
+        console.log(NaN - 5);
+        console.log(NaN * 5);
+        console.log(NaN / 5);
+        console.log(NaN % 5);
+        // Infinity参与的运算 视情况而定
+        console.log(Infinity + 5);
+        console.log(Infinity - 5);
+        console.log(Infinity * 5);
+        console.log(Infinity / 5);
+        console.log(Infinity % 5); // NaN 
+        console.log(1 + Infinity);
+        console.log(1 - Infinity); // -Infinity
+        console.log(1 * Infinity);
+        console.log(1 / Infinity); // 0
+        console.log(1 % Infinity); // 1
+        console.log(-Infinity + 5);
+        console.log(-Infinity - 5);
+        console.log(-Infinity * 5);
+        console.log(-Infinity / 5);
+        console.log(-Infinity % 5);  // NaN 
+```
+
+非正常情况2：
+
+其他类型的数据参与数学运算。
+
+1. 有字符串参与的+运算：转为字符串拼接
+2. 隐式转换：参与运算的其他数据类型会隐式转换为数字类型。结果与用Number()转出的相同
+
+##### 比较运算符
+
+>  <  >  <=  >=  ==  !=  ===  !==
+>
+> 比较后返回一个boolean值
+>
+> ==： 只判断值是否相等
+>
+> ===：判断值和数据类型是否相等
+
+非正常情况1：NaN参与，除!=和!==之外，其他返回值均为false
+
+​			Infinity参与，结果如下：
+
+非正常情况2：有其他数据类型参与，其他数据类型也会隐式转换为数字类型进行比较。
+
+* null的判断较特殊。null与0比较时，值为false，>=和<=判断为true
+* null==undefined
+
+非正常情况3：字符串与字符串的比较
+
+* 不会发生隐式转换为数字，而是比较两个字符串的Unicode编码顺序。
+* 字符编码顺序：从前往后0-9，A-Z，a-z，前面的小于后面的
+* 比较时，从第一个字符开始比较，依次往后顺延比较，直到比较出大小，就不再往后比较。
+* 比较顺序：从前往后比较，前面的结果与后面进行比较。如：3>2>1 // false
+
+##### 逻辑运算符
+
+常用于布尔类型值之间，当操作数都是boolean值时，返回值也是boolean值。
+
+&&   ||    ！
+
+&&：都真才真，有假则假
+
+|| ： 有真就真，都假才假
+
+！：非真即假，非假即真  运算结果只能是true或false
+
+非正常情况：有其他数据类型参与逻辑运算，其他数据类型也会隐式转换为布尔类型参与判断。最终结果为原来的某个位置的数据。
+
+​		      并不是所有逻辑运算返回结果都是布尔值，其他数据参与得到的就是数据本身。
+
+运算顺序：非与或
+
+##### 赋值运算符
+
+必须有变量参与运算
+
+赋值运算符参与两件事情：
+
+1. 将变量中原始值参与对应数学运算，
+2. 将运算结果重新赋值给变量
+
+= +=  -=  *=  /=  %=  ++  --
+
+##### 一元运算符
+
+只有一个操作数的运算符。++  --  ！
+
+a++： 先使用，后自加
+
+++a:先加后用
+
+##### 运算优先级
+
+优先级从高到低排列为：
+
+1. ()
+2. 一元运算符 ++  --  !
+3. 算术运算符 先*  /  %  后+  -
+4. 关系运算符  >  >=   <  <=
+5. == ！=  ===  !==
+6. 逻辑运算符  先&&  后||
+7. 赋值运算符
