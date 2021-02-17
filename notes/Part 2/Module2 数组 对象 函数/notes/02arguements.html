@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var sum = function (a, b) {
+            if (arguments.length >= 4) {
+                return '程序出错';
+            } else if (arguments.length == 3) {
+                if (arguments[0] > arguments[1]) {
+                    return arguments[0] + arguments[2];
+                } else {
+                    return arguments[1] + arguments[2];
+                }
+            } else if (arguments.length == 1) {
+                return arguments[0];
+            } else {
+                return a + b;
+            }
+        };
+        console.log(sum(1));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

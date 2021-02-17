@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 求斐波那契数列某一项的值
+        var fibo = function (i) {
+            if (i == 1 || i == 2) {
+                return 1;
+            } else {
+                return fibo(i - 1) + fibo(i - 2);
+            }
+        }
+        console.log(fibo(1));
+        console.log(fibo(2));
+        console.log(fibo(3));
+        console.log(fibo(4));
+        console.log(fibo(5));
+        console.log(fibo(6));
+        console.log(fibo(7));
+        console.log(fibo(8));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
