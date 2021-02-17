@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for (n = 1000; n <= 9999; n++) {
+            var a = n % 10,
+                b = parseInt(n / 10) % 10,
+                c = parseInt(n / 100) % 10,
+                d = parseInt(n / 1000);
+            var sum = Math.pow(a, 4) + Math.pow(b, 4) + Math.pow(c, 4) + Math.pow(d, 4);
+            if (n == sum) {
+                console.log(n);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

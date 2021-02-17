@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 一个三位数，它每一位数的三次方之和为它本身
+        for(var m = 100;m <= 999;m++) {
+            var a = m % 10,
+                b = parseInt(m / 10) % 10,
+                c = parseInt(m / 100);
+            var sum = a * a * a + b * b * b + c * c * c;
+            if(sum == m) {
+                console.log(sum + '是水仙花数');
+            }
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
