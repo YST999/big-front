@@ -227,3 +227,292 @@ var a = 1;
     console.log(a);
 })(1);
 ```
+
+### 对象
+
+#### 概念
+
+js的对象就是无序属性的集合。
+
+对象的属性可以包含基本值、对象或函数。
+
+对象就是一组没有顺序的值，以键值对形式出现。
+
+对象的行为和特征：
+
+特征：在对象中用属性表示
+
+行为：在对象中用方法表示
+
+#### 对象字面量
+
+##### 创建对象：
+
+###### 1.使用对象字面量赋值给变量
+
+{ }
+
+每条数据都由属性名和属性值组成。k:v
+
+v可以是任意类型的数据。
+```js{cmd=node}
+// 通过对象字面量创建对象
+var person = {
+    name: 'zhangsan',
+    age: 18,
+    sex: 'male',
+    sayHi: function() {
+        // 在对象内部调用属性方法使用this
+        console.log(this.name + '向你sayHi');
+    }
+}
+// 调用对象的属性和方法
+console.log(person.name);
+console.log(person.age);
+console.log(person.sex)
+person.sayHi();
+// []调用
+// []内部是字符串格式的属性名
+person["name"];
+person["sayHi"];
+// 添加属性
+person.school = '第一';
+// 修改属性
+person.age = 18;
+// 删除属性
+delete person.sex;
+```
+
+###### 2.new Object() 创建对象
+
+```js{cmd=node}
+// 创建对象
+var person = new Object();
+// 添加属性和方法
+person.name = 'ls';
+person.age = 19;
+person.sayHi = function() {
+    console.log('Hi');
+};
+```
+
+new在执行时做的事情：
+
+1. new会在内存中创建一个新的空对象
+2. new会让this指向这个新的对象
+3. 执行构造函数。目的：给新对象加属性和方法
+4. new会返回这个新对象
+
+###### 3.工厂函数创建对象
+
+封装new Object()，需要创建类似的对象时，调用该方法即可。
+```js{cmd=node}
+function createPerson(name,age,sex) {
+    var person = new Object();
+    person.name = name;
+    person.age = age;
+    person.sex = sex;
+    person.sayHi = function() {
+        console.log('Hi');
+    };
+    return person;
+}
+var p1 = createPerson('zs',18,'male');
+var p2 = createPerson('ls',20,'female');
+console.log(p1);
+console.log(p2);
+```
+
+###### 4.自定义构造函数
+```js{cmd=node}
+function Person(name,age,sex) {
+    this.name = name;
+    this.age = age;
+    this.sex = sex;
+}
+var p1 = new Person('zs',19,'male');
+console.log(p1);
+
+```
+
+#### 对象遍历
+
+for in 循环
+```js{cmd=node}
+function Person(name,age,sex) {
+    this.name = name;
+    this.age = age;
+    this.sex = sex;
+}
+var p1 = new Person('zs',19,'male');
+for(var k in p1) {
+    console.log(p1[k]);
+}
+```
+
+### 复杂类型
+
+###### 简单类型和复杂类型的区别
+
+值类型：简单数据类型，基本数据类型，在存储时，变量中存储的是值本身，因此叫做值类型。
+
+引用类型：复杂数据类型，在存储时，变量存储的仅仅是地址(引用)，因此叫做引用数据类型。
+
+简单类型在内存中存储时，会单独开辟一个空间，互相之间不会影响。
+
+复杂类型在内存中存储：如果将复杂类型的数据复制给一个变量，复杂类型的数据会在内存中创建一个原型，而变量中存储的是指向对象的一个地址，如果将变量赋值给另一个变量，相当于将地址复制一份给新的变量，两个变量的地址相同，指向的是同一个原型，不论哪个地址更改了原型，两个变量下次访问时，都会发生变化。
+
+![](G:\big-front\notes\Part 2\Module2 数组 对象 函数\canvas.png)
+
+JavaScript的对象包含：自定义对象、内置对象、浏览器对象
+
+ECMAscript的对象：自定义对象、内置对象
+
+#### 常用内置对象
+
+##### Math
+
+```js{cmd=node}
+// 向上、向下取整
+var m = Math.ceil(0.8);
+var n = Math.floor(0.8);
+console.log(m,n);
+// 绝对值
+var a = Math.abs('-1');
+console.log(a);
+// 最大值和最小值
+var b = Math.max(10,20,30,52,68);
+console.log(b);
+
+```
+
+##### Array
+
+检测某个实例对象是否是某个对象类型
+
+```js{cmd=node}
+var arr = new Array();
+console.log(arr instanceof Array); // true
+```
+
+常用方法：
+
+###### 首尾操作
+
+```js{cmd=node}
+// 尾推:参数随意，可以有一个或多个
+arr.push(5,6,7,8);
+// 删除最后一项,无需传参，返回删除项
+arr.pop();
+// 删除第一项，返回删除项
+arr.shift();
+// 首添，参数与push类似
+arr.unshift(-1,0);
+```
+
+###### 合并和拆分
+```js{cmd=node}
+// 合并
+var arr1 = [1,2,3,4];
+var arr2 = [5,6,7,8];
+var arr3 = arr1.concat(arr2);
+// 拆分slice 
+// 从当前数组中截取一个新的数组，不影响原来的数组，返回一个新数组，包含从start到end(不包含)的元素。
+// 参数区分正负，负值表示从后往前数第几个位置，参数可以只传递一个，表示从开始位置截取到字符串结尾
+var arr4 = arr3.slice(3,5);// [4,5]
+var arr5 = arr3.slice(-5,-1);// [4,5,6,7]
+```
+
+###### 删除、插入、替换
+
+splice(index,howmany,element1,element2)
+```js{cmd=node}
+// 删除 传前两个参数 删除的项为返回值
+var arr = [1,2,3,4,5,6,7,8,9];
+// arr.splice(2,5);
+// 替换：传三个及以上的参数
+arr.splice(2,5,'111','222');
+console.log(arr);
+// 插入：传三个及以上参数，但第二个参数必须为0
+arr.splice(2,0,'xixi');
+console.log(arr);
+```
+
+indexOf()  查找数据在数组中最先出现的下标。
+
+lastIndexOf()  查找数据在数组中最后一次出现的下标
+
+注意：如果没找到返回-1.
+
+###### 排序
+
+reverse()  倒序排列
+
+sort()  按ASCII码从小到大排列
+
+​	如果想按数值大小排序，必须添加sort的比较函数参数。该函数要比较两个值，然后返回一个用于说明这两个值的相对顺序的数字。比较函数应该具有两个参数a和b,根据a和b的关系作为判断条件，返回值根据条件分为三个分支：-1--a在b前；1--a在b后；0--a和b的顺序保持不变。
+```js{cmd=node}
+var arr = [1,2,3,4,5,6,7,8,9];
+// 降序排列
+arr.sort(function(a,b){
+    if(a < b){
+        return 1;
+    } else if(a > b){
+        return -1;
+    } else{
+        return 0;
+    }
+});
+console.log(arr);
+```
+
+###### 转字符串
+
+join()  以连字符进行连接。
+```js{cmd=node}
+var arr = [1,2,3,4,5,6,7,8,9];
+console.log(arr.join('#'));
+```
+
+##### String
+
+基本包装类型：
+
+基本类型的数据在进行一些特殊操作时，会暂时被包装成一个对象，结束后再被销毁。
+
+字符串特点：
+
+1. 不可变。因此在大量拼接字符串的时候会影响效率问题。
+2. 字符串的所有方法都不会改变字符串本身，操作完成会返回一个新的字符串。
+
+**属性**
+
+stringth : 字符串长度
+
+**方法**
+
+charAt()可返回指定位置的字符
+
+indexOf()  返回字符串在原始字符串中第一次出现的地方。没有时返回-1.
+
+concat()  连接两个或多个字符串，生成新的字符串。
+
+split()  分割字符串成一个数组
+
+toLowerCase()
+
+toUpperCase()
+
+slice()  提取字符串的某个部分
+
+substr()  方法可再字符串中抽取从start下标开始的指定书目的字符
+
+* substr(start,howmany)
+* 从开始位置截取到指定长度的字符串
+* start区分正负
+* how满意必须为正数或不写，不写表示截取到最后。
+
+subString(start,end)
+
+* 截取前会比较两个数的大小，小的作为开始，大的作为结束。
+
