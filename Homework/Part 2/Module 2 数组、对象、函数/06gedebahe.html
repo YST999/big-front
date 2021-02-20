@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 偶数
+        for (var m = 1; m <= 2000; m++) {
+            // 如果是偶数
+            if (m % 2 == 0) {
+                for (var i = 1; i < m; i++) {
+                    o = m - i;
+                    var a = zhishu(o);
+                    var b = zhishu(i);
+                    if (a && b) {
+                        console.log(m + '为质数之和。')
+                        break;
+                    }
+                }
+            }
+        }
+        // 判断质数
+        function zhishu(n) {
+            var count = 0;
+            zhi: for (var i = 1; i <= n; i++) {
+                if (n % i == 0) {
+                    count++;
+                    if (count == 3) {
+                        return false;
+                        break zhi;
+                    }else {
+                        return true;
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

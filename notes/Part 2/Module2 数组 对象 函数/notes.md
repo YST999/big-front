@@ -505,7 +505,7 @@ toUpperCase()
 
 slice()  提取字符串的某个部分
 
-substr()  方法可再字符串中抽取从start下标开始的指定书目的字符
+substr()  方法可再字符串中抽取从start下标开始的指定数目的字符
 
 * substr(start,howmany)
 * 从开始位置截取到指定长度的字符串

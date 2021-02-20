@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = 'i love javascript very much';
+        function upper(str) {
+            var arr = str.split(' ');
+            var newArr = [];
+            for (var i = 0; i < arr.length; i++) {
+                newArr.push(arr[i][0].toUpperCase() + arr[i].slice(1));
+            }
+            return newArr.join(' ');
+        }
+        console.log(upper(str));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

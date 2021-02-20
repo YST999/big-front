@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [7, 1, 5, 3, 6, 4];
+        var min = arr[0];
+        var minIndex = 0;
+        for(var i = 1;i < arr.length;i++){
+            if(arr[i] < min) {
+                min = arr[i];
+                minIndex = i;
+            }
+        }
+        var max = min;
+        var maxIndex = minIndex;
+        for(var i = minIndex;i < arr.length;i++){
+            if(arr[i] > max) {
+                max = arr[i];
+                maxIndex = i;
+            }
+        }
+        console.log('在第' + (minIndex+1) + '天买入，在第' + (maxIndex+1) + '天卖出');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

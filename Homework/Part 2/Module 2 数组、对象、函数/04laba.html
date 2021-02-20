@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a, b, c;
+        var m, n, o;
+        var sum = 0;
+        for (var i = 100; i <= 999; i++) {
+            a = i % 10;
+            b = parseInt(i / 10) % 10;
+            c = parseInt(i / 100) % 10;
+            m = jiecheng(a);
+            n = jiecheng(b);
+            o = jiecheng(c);
+            sum = m + n + o;
+            // console.log(a,b,c,m,n,o,sum);
+            if (sum == i) {
+                console.log(i);
+            }
+        }
+        function jiecheng(f) {
+            // 将ji定义为全局变量时，会累乘，不清除上一次执行函数的结果。
+            var ji = 1;
+            if (f == 0) {
+                return 0;
+            } else {
+                for (var i = 1; i <= f; i++) {
+                    ji *= i;
+                }
+                return ji;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

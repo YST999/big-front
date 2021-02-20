@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [55,86,75,62,44,98];
+        var max = arr[0];
+        var maxIndex = 0;
+        var min = arr[0];
+        var minIndex = 0;
+        for(var i = 1;i < arr.length;i++){
+            if(arr[i] > max) {
+                max = arr[i];
+                maxIndex = i;
+                continue;
+            }
+            if(arr[i] < min) {
+                min = arr[i];
+                minIndex = i;
+            }
+        }
+        console.log('最大值为：' + max +',下标为：' + maxIndex + ',最小值为：' + min + ',下标为：' + minIndex);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

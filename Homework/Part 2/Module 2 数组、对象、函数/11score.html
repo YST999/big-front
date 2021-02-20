@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [88,86,72,85,92,95,64,80,90,67];
+        var count = 0;
+        for(var i = 1;i < arr.length;i++) {
+            count += arr[i];
+        }
+        console.log(count);
+        var avg = count / arr.length;
+        var stuNum  = 0;
+        for(var i = 1;i < arr.length;i++) {
+            if(arr[i] >= avg) {
+                stuNum++;
+            }
+        }
+        console.log('大于等于平均成绩的人数为：' + stuNum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
